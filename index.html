@@ -18,12 +18,14 @@
 </head>
 
 <body>
-    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Fechar menu" role="button" >
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Fechar menu" role="button">
     <label class="close-menu-label" for="close-menu" title="Close menu"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
             <h1 onclick="getElementById('close-menu').checked = false;">
-                <a href="#home">LOGO</a>
+                <a class="logo" href="#home">
+                    <img  src="assets/img/faustino.png" alt="">
+                </a>
             </h1>
 
             <nav>
@@ -38,37 +40,20 @@
         </div>
     </aside>
     <div class="menu-spacing"></div>
-    <section id="home" class="intro main-bg section">
+    <section id="home" class="intro section">
         <div class="main-content intro-content">
             <div class="intro-text-content">X
-                <h2>Lua adversa</h2>
-                <p>
-                    Tenho fases, como a lua.
-                    Fases de andar escondida,
-                    fases de vir para a rua...
-                    Perdição da minha vida!
-                    Perdição da vida minha!
-                    Tenho fases de ser tua,
-                    tenho outras de ser sozinha.
+                <h2>Sinfonia de Sabores </h2>
 
-                    Fases que vão e vêm,
-                    no secreto calendário
-                    que um astrólogo arbitrário
-                    inventou para meu uso.
-
-                    E roda a melancolia
-                    seu interminável fuso!
-
-                    Não me encontro com ninguém
-                    (tenho fases como a lua...)
-                    No dia de alguém ser meu
-                    não é dia de eu ser sua...
-                    E, quando chega esse dia,
-                    o outro desapareceu...
+                "O hambúrguer, com sua simplicidade aparente, revela-se uma verdadeira sinfonia de sabores entre dois
+                pedaços de pão. Cada mordida é uma jornada sensorial, onde a suculência da carne grelhada e a harmonia
+                dos condimentos se encontram. Mais que uma refeição, é uma experiência gastronômica que transcende o
+                ordinário, convidando os apreciadores da boa comida a se deliciarem em cada camada de sabor que esse
+                ícone culinário oferece."
                 </p>
             </div>
             <div class="intro-img">
-                <img src="assets/img/javascript-not-opmitezed.svg.svg"
+                <img src="assets/img/hamburguer_-removebg-preview.png"
                     alt="desemho de um homem segurando a logo de css, mulher segurando logo de java script, homem segurando logo de html">
             </div>
         </div>
@@ -258,7 +243,7 @@
                         </label>
                         <input type="text" name="first-name" id="first-name" placeholder="Your name">
                     </div>
-                    <div class="form-group " >
+                    <div class="form-group ">
                         <label for="last-name">
                             Sobrenome
                         </label>
@@ -274,7 +259,8 @@
                         <label for="Message">
                             Mensagem
                         </label>
-                        <textarea name="message" id="messsage" cols="30" rows="10" placeholder="Your message"></textarea>
+                        <textarea name="message" id="messsage" cols="30" rows="10"
+                            placeholder="Your message"></textarea>
                     </div>
                     <div class="form-group full-width">
                         <button type="submit">Enviar mensagem</button>
@@ -285,7 +271,7 @@
     </section>
     <footer id="footer" class="white-bg">
         <p>
-            <a rel="nofollow" target="_blank" href="#">Feito com <span class="heart">♡</span>  Por Brendon Fernandes</a>
+            <a rel="nofollow" target="_blank" href="#">Feito com <span class="heart">♡</span> Por Brendon Fernandes</a>
         </p>
     </footer>
     <a class="back-to-top" href="#">➤</a>

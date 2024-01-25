@@ -164,6 +164,13 @@
 .close-menu {
     display: none;
 }
+
+.logo img{
+    height: 23vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: none;
+}
 @media (max-width: 800px) {
     .intro-content, .grid{
         grid-template-columns: 1fr;
