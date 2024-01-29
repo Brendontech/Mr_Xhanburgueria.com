@@ -19,6 +19,7 @@
     height: auto;
 }
 .top3-content {
+    
     max-width: 64rem;
     display: flex;
     flex-direction: column;
@@ -172,10 +173,16 @@
 }
 
 .logo img{
-    height: 23vh;
+    height: 15vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: none;
+}
+caption {
+    color: blue;
+}
+.precoCremeSuco {
+    color: rgba(116, 155, 56, 0.941);
 }
 @media (max-width: 800px) {
     .intro-content, .grid{
