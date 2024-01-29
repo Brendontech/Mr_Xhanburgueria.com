@@ -188,6 +188,10 @@ caption {
     .intro-content, .grid{
         grid-template-columns: 1fr;
     }
+    #refri{
+        padding-top: 4rem;
+        font-size: 4.5rem;
+    }
     .gallery-img {
         width: 100%;
         max-width: 100%;

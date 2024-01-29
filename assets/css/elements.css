@@ -66,3 +66,8 @@ table td, table th {
 tfoot td, table th  {
     background: var(--ligth-gray-color);
 }
+/* @media (max-width: 800px) {
+    h2{
+        height: 4rem;
+    }
+} */
