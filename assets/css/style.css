@@ -7,12 +7,16 @@
     min-height: 100vh;
 
 }
-.intro-text-content, .intro-img {
+.intro-text-content {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
 }
 
+.intro-img{
+    display: flex;
+    flex-direction: column;
+}
 
 .intro-img img{
     max-width: 100%;
