@@ -4,7 +4,11 @@
     background-position: center center;
     color: var(--white-color);
 }
-
+.text-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .white-bg {
     background: var(--white-color);
     color: var(--primary-color);
@@ -25,10 +29,7 @@
     height: 65px;
 }
 
-body .full-width{
-    width: 100%;
-    flex: 1 1 100%;
-}
+
 del {
     color: crimson;
 }

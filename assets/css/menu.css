@@ -52,3 +52,9 @@
     width: 50%;
     left: 25%;
 }
+
+@media (max-width:800px) {
+    .ocult-car{
+        display: none;
+    }
+}

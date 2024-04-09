@@ -188,6 +188,16 @@ caption {
 .precoCremeSuco {
     color: rgba(116, 155, 56, 0.941);
 }
+
+img.carrinho{
+    height: 12vh;
+    width: 12vh;
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    padding: 2vh;
+}
+
 @media (max-width: 800px) {
     .intro-content, .grid{
         grid-template-columns: 1fr;

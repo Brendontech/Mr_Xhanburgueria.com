@@ -1,0 +1,76 @@
+.teste {
+    width: 100%;
+    ;
+    padding: 5vh;
+}
+.fixar-btn {
+    position: fixed;
+    top: 270px;
+    /* Distância do topo da janela */
+    /* Distância da esquerda da janela */
+    background-color: #fff;
+    /* Cor de fundo do elemento */
+    padding: 10px;
+    /* Espaçamento interno */
+    border: 1px solid #ccc;
+    /* Borda do elemento */
+}
+
+.alinhamento-apresentation {
+    max-width: 1200px;
+    padding: 2vh;
+    align-items: center;
+    height: 20vh;
+    margin-bottom: 2vh;
+    background-color: black;
+    color: antiquewhite;
+
+}
+
+.Descricao-apresentation {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.Descricao-apresentation h1 {
+    font-size: 2rem;
+}
+
+.ver-promocao {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-ver-promocao a {
+    padding: 2vh;
+    background-color: chocolate;
+    border-radius: 5px;
+    font-size: 1.4rem;
+}
+
+.card-img {
+    object-fit: cover;
+    display: block;
+    max-width: 100%;
+    /* A imagem ocupa no máximo 100% da largura do contêiner pai */
+    max-height: 100%;
+    /* A imagem ocupa no máximo 100% da altura do contêiner pai */
+    width: auto;
+    /* A largura é ajustada automaticamente para manter a proporção original da imagem */
+    height: auto;
+    /* A altura é ajustada automaticamente para manter a proporção original da imagem */
+    margin: auto;
+    /* Centraliza a imagem horizontalmente */
+}
+
+.card {
+    overflow: hidden;
+    height: 30vh;
+    max-width: 1200px;
+    border: 1px solid #ccc;
+    /* Apenas para visualização */
+}
+
