@@ -11,9 +11,10 @@ h1{
     padding-top: 4vh;
     font-size: 1.4rem;
     font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 2vh;
 }
 .cont-dir {
-    width: 32%;
+    width: 40rem;
     float: right;
 }
 .top-ing {
@@ -22,7 +23,7 @@ h1{
 #pedido-dir {
     background: #fff;
     border-radius: 4px;
-    width: 80%;
+    width: 100%;
     border: 1px solid #d4d4d4;
 }
 p{
@@ -53,8 +54,6 @@ span.icon24 {
     margin-top: 2px;
 }
 @media (max-width: 800px) {
-
-    
     .menu-spacing{
         box-shadow: 0px 0px 8px 1px var(--secondary-color);
         height: 15vh;

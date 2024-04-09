@@ -197,6 +197,24 @@ img.carrinho{
     display: flex;
     padding: 2vh;
 }
+.comprar-btn-alinhar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btn-comprar-hbg{
+    padding: 1vh;
+    width: 30vh;
+    color: black;
+    text-align: center;
+    background-color: rgb(238, 241, 18);
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para o brilho */
+}
+.btn-comprar-hbg:hover{
+    background-color: yellowgreen;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra maior quando passar o mouse */
+}
 
 @media (max-width: 800px) {
     .intro-content, .grid{

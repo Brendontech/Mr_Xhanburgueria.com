@@ -12,6 +12,7 @@ body{
     font-size: 2rem;
     color: var(--primary-color);
     line-height: 1.5;
+    background-color: rgba(212, 212, 201, 0.815);
 }
 
 h1,h2,h3,h4,h5,h6{
