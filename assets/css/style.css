@@ -200,6 +200,7 @@ img.carrinho{
 .comprar-btn-alinhar {
     width: 100%;
     display: flex;
+    height: auto;
     justify-content: center;
 }
 .btn-comprar-hbg{
