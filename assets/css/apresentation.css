@@ -3,18 +3,6 @@
     ;
     padding: 5vh;
 }
-.fixar-btn {
-    position: fixed;
-    top: 270px;
-    /* Distância do topo da janela */
-    /* Distância da esquerda da janela */
-    background-color: #fff;
-    /* Cor de fundo do elemento */
-    padding: 10px;
-    /* Espaçamento interno */
-    border: 1px solid #ccc;
-    /* Borda do elemento */
-}
 
 .alinhamento-apresentation {
     max-width: 1200px;
