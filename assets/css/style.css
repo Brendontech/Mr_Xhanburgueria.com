@@ -1,4 +1,4 @@
-.intro-content{
+.intro-content {
     position: relative;
     /* top: -6rem; */
     display: grid;
@@ -7,23 +7,25 @@
     min-height: 100vh;
 
 }
+
 .intro-text-content {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
 }
 
-.intro-img{
+.intro-img {
     display: flex;
     flex-direction: column;
 }
 
-.intro-img img{
+.intro-img img {
     max-width: 100%;
     height: auto;
 }
+
 .top3-content {
-    
+
     max-width: 64rem;
     display: flex;
     flex-direction: column;
@@ -40,12 +42,15 @@
     min-height: 100vh;
     max-width: 120rem;
 }
+
 .grid-main-heading {
     margin-bottom: 1rem;
 }
+
 .grid-description {
     padding-bottom: 5rem;
 }
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -70,11 +75,13 @@
     left: -2rem;
     transform: rotate(5deg);
 }
-.grid img{
+
+.grid img {
     background-size: cover;
     width: 30rem;
     height: 16rem;
 }
+
 .gallery-img {
     width: 100%;
     max-width: 36rem;
@@ -85,19 +92,23 @@
 .gallery-img img {
     transition: all 300ms ease-in-out;
 }
+
 .gallery-img img:hover {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
+
 .contact-form {
     grid-column: span 2;
-    
+
 
 }
+
 .form-grid legend {
     font-style: italic;
     font-size: 1.6rem;
     margin-bottom: 3rem;
 }
+
 .contact-form .form-grid {
     border: none;
     display: flex;
@@ -114,6 +125,7 @@
     display: block;
     margin-bottom: 1rem;
 }
+
 .form-group input,
 .form-group textarea {
     border: none;
@@ -123,10 +135,12 @@
     font-size: 3rem;
     outline: none;
 }
+
 .form-group input:focus,
-.form-group textarea:focus{
+.form-group textarea:focus {
     box-shadow: 0px 0px 5px 5px var(--secondary-color);
 }
+
 .form-group button {
     border: 0.5rem solid var(--white-color);
     background: none;
@@ -136,14 +150,17 @@
     cursor: pointer;
     transition: all 300ms ease-in-out;
 }
+
 .form-group button:hover {
     background: var(--white-color);
     color: var(--primary-color);
 }
+
 .form-group::placeholder {
     color: var(--ligth-gray-color);
 }
-.back-to-top{
+
+.back-to-top {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
@@ -157,39 +174,45 @@
     transform: rotate(-90deg);
     border: 0.1rem solid var(--primary-color);
 }
+
 #footer {
     text-align: center;
     font-size: 1.8rem;
 }
+
 #footer p {
     margin: 0;
     padding: 3rem;
 }
 
-#footer a{
+#footer a {
     color: var(--primary-color);
 }
+
 .heart {
     color: var(--secondary-color);
 }
+
 .close-menu {
     display: none;
 }
 
-.logo img{
+.logo img {
     height: 15vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: none;
 }
+
 caption {
     color: blue;
 }
+
 .precoCremeSuco {
     color: rgba(116, 155, 56, 0.941);
 }
 
-img.carrinho{
+img.carrinho {
     height: 12vh;
     width: 12vh;
     background-size: cover;
@@ -197,57 +220,134 @@ img.carrinho{
     display: flex;
     padding: 2vh;
 }
+
 .comprar-btn-alinhar {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.btn-comprar-hbg{
+
+.btn-comprar-hbg {
     padding: 1vh;
     width: 30vh;
     color: black;
     text-align: center;
     background-color: rgb(238, 241, 18);
     border-radius: 5px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para o brilho */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra para o brilho */
 }
-.btn-comprar-hbg:hover{
+
+.btn-comprar-hbg:hover {
     background-color: yellowgreen;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra maior quando passar o mouse */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    /* Sombra maior quando passar o mouse */
+}
+
+/* Estilo do botão dropdown */
+.dropbtn {
+    background-color: #4CAF50;
+    /* Cor de fundo */
+    color: white;
+    /* Cor do texto */
+    padding: 16px;
+    /* Espaçamento interno */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    border: none;
+    /* Sem borda */
+    cursor: pointer;
+    /* Cursor de ponteiro */
+}
+
+/* Estilo do conteúdo do dropdown (inicialmente oculto) */
+.dropdown-content {
+    display: none;
+    /* Oculta o conteúdo */
+    position: absolute;
+    /* Posição absoluta */
+    background-color: #f9f9f9;
+    /* Cor de fundo */
+    min-width: 160px;
+    /* Largura mínima */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+    z-index: 1;
+    /* Z-index para sobrepor */
+}
+
+/* Estilo dos links dentro do dropdown */
+.dropdown-content a {
+    color: black;
+    /* Cor do texto */
+    padding: 12px 16px;
+    /* Espaçamento interno */
+    text-decoration: none;
+    /* Sem sublinhado */
+    display: block;
+    /* Exibir como bloco */
+}
+
+/* Altera a cor dos links do dropdown ao passar o mouse */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    /* Cor de fundo ao passar o mouse */
+}
+
+/* Mostra o dropdown ao passar o mouse sobre o container */
+.dropdown:hover .dropdown-content {
+    display: block;
+    /* Exibe o conteúdo */
+}
+
+/* Altera a cor de fundo do botão dropdown quando o conteúdo é exibido */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+    /* Cor de fundo do botão ao passar o mouse */
 }
 
 @media (max-width: 800px) {
-    .intro-content, .grid{
+    .intro-content,
+    .grid {
         grid-template-columns: 1fr;
     }
-    #refri{
+
+    #refri {
         padding-top: 4rem;
         font-size: 4rem;
     }
+
     .gallery-img {
         width: 100%;
         max-width: 100%;
         max-height: 100%;
     }
-    .gallery-img img{
+
+    .gallery-img img {
         width: 100%;
         height: 100%;
     }
+
     .grid-one-content {
         display: block;
     }
+
     .menu {
         bottom: 0;
         text-align: center;
     }
-    .menu-content, .menu-content ul{
+
+    .menu-content,
+    .menu-content ul {
         flex-direction: column;
         justify-content: center;
     }
-    .menu-content{
-        height:100vh;
+
+    .menu-content {
+        height: 100vh;
     }
-    .menu{
+
+    .menu {
         display: none;
     }
 
@@ -267,12 +367,15 @@ img.carrinho{
         padding: 0.5rem;
         cursor: pointer;
     }
+
     .close-menu:checked~.menu {
         display: block;
     }
+
     .close-menu:checked~.close-menu-label::after {
         content: '×';
     }
+
     .menu-spacing {
         display: none;
     }

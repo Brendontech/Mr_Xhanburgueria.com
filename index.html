@@ -44,10 +44,8 @@
                     <a class="ocult-car" href="/assets/html/carrinho.html">
                         <img class="carrinho" src="/assets/img/R__1_-removebg-preview.png">
                     </a>
-
                 </ul>
             </nav>
-
         </div>
     </aside>
     <section id="grid-one" class="grid-one section">
@@ -125,7 +123,7 @@
                 <div class="bloco-img">
                     <div class="gallery-img">
                         <img src="/assets/img/hamburguer/combo-5.png">
-                        <p > Confira os melhores preços</p>
+                        <p> Confira os melhores preços</p>
                         <p id="desconto"> de R$ <i><del> 120,00</p></del></i>
                         <p id="valor">Por R$<i> 119,90</i></p>
                         <div class="comprar-btn-alinhar">
@@ -244,6 +242,23 @@
             </div>
         </div>
     </section>
+    <div class="dropdown">
+        <button class="dropbtn">Selecione um item</button>
+        <div class="dropdown-content" id="item1">
+            <a href="#" onclick="addToCart('Item 1', 10)">Item 1 (R$ 10,00)</a>
+            <a href="#" onclick="addToCart('Item 1', 10)">Item 2 (R$ 10,00)</a>
+            <a href="#" onclick="addToCart('Item 1', 10)">Item 3 (R$ 10,00)</a>
+        </div>
+    </div>
+
+    <div id="cart">
+        <h2>Carrinho de Compras</h2>
+        <ul id="cartItems">
+            <!-- Itens selecionados serão adicionados aqui -->
+        </ul>
+        <p id="total">Total: R$ 0,00</p>
+    </div>
+
     <section id="pricing" class=" section">
         <div class="main-content top3-content">
             <h2>Cremes e sucos</h2>
@@ -386,59 +401,64 @@
         </div>
         </div>
     </section>
-    <section id="Contact" class="intro section">
-        <div class="main-content intro-content">
-            <div class="intro-text-content">
-                <h2>Meios de contato</h2>
-                <p>
-                    Entre em contato através do formulário a baixo que responderemos o mais rápido possível
-                </p>
+    <form action="https://formsubmit.co/fernandesbrendon83@gmail.com" method="POST">
+        <section id="Contact" class="intro section">
+            <input type="hidden" name="_next" value="https://mrxsanduicheria.netlify.app/assets/html/sucesso.html" />
+            <input type="hidden" name="_autoresponse" value="E-mail recebido">
+            <div class="main-content intro-content">
+                <div class="intro-text-content">
+                    <h2>Meios de contato</h2>
+                    <p>
+                        Entre em contato através do formulário a baixo que responderemos o mais rápido possível
+                    </p>
+                </div>
+                <div class="intro-img">
+                    <img src="assets/img/hamburguer/qtnrogei.png"
+                        alt="desemho de um homem segurando a logo de css, mulher segurando logo de java script, homem segurando logo de html">
+                </div>
+                <div class="contact-form">
+                    <fieldset class="form-grid">
+                        <legend>Contact me</legend>
+                        <div class="form-group  ">
+                            <label for="first-name">
+                                Primeiro nome
+                            </label>
+                            <input type="text" name="first-name" id="first-name" placeholder="Your name">
+                        </div>
+                        <div class="form-group ">
+                            <label for="last-name">
+                                Sobrenome
+                            </label>
+                            <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="email">
+                                E-mail
+                            </label>
+                            <input type="email" name="email" id="email" placeholder="Your e-mail">
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="Message">
+                                Mensagem
+                            </label>
+                            <textarea name="message" id="messsage" cols="30" rows="10"
+                                placeholder="Mensagem"></textarea>
+                        </div>
+                        <div class="form-group full-width">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </fieldset>
+                </div>
             </div>
-            <div class="intro-img">
-                <img src="assets/img/hamburguer/qtnrogei.png"
-                    alt="desemho de um homem segurando a logo de css, mulher segurando logo de java script, homem segurando logo de html">
-            </div>
-            <div class="contact-form">
-                <fieldset class="form-grid">
-                    <legend>Contact me</legend>
-                    <div class="form-group  ">
-                        <label for="first-name">
-                            Primeiro nome
-                        </label>
-                        <input type="text" name="first-name" id="first-name" placeholder="Your name">
-                    </div>
-                    <div class="form-group ">
-                        <label for="last-name">
-                            Sobrenome
-                        </label>
-                        <input type="text" name="last-name" id="last-name" placeholder="Your last name">
-                    </div>
-                    <div class="form-group full-width">
-                        <label for="email">
-                            E-mail
-                        </label>
-                        <input type="email" name="email" id="email" placeholder="Your e-mail">
-                    </div>
-                    <div class="form-group full-width">
-                        <label for="Message">
-                            Mensagem
-                        </label>
-                        <textarea name="message" id="messsage" cols="30" rows="10"
-                            placeholder="Your message"></textarea>
-                    </div>
-                    <div class="form-group full-width">
-                        <button onclick="alert('Mensagem enviada')" type="submit">Enviar mensagem</button>
-                    </div>
-                </fieldset>
-            </div>
-        </div>
-    </section>
+        </section>
+    </form>
     <footer id="footer" class="white-bg">
         <p>
             <a rel="nofollow" target="_blank" href="#">Feito com <span class="heart">♡</span> Por Brendon Fernandes</a>
         </p>
     </footer>
     <a class="back-to-top" href="#">➤</a>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
