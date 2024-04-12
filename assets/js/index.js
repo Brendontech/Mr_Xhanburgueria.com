@@ -1,6 +1,4 @@
-onclick(enviar), {
-    alert: "enviar"
-}
+
 let cartTotal = 0;
 
 function addToCart(item, price) {

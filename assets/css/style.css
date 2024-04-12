@@ -230,12 +230,23 @@ img.carrinho {
 .btn-comprar-hbg {
     padding: 1vh;
     width: 30vh;
+    cursor: pointer;
     color: black;
     text-align: center;
     background-color: rgb(238, 241, 18);
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     /* Sombra para o brilho */
+}
+.Bebidas-option {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.creme-opition {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-comprar-hbg:hover {
@@ -262,18 +273,14 @@ img.carrinho {
 
 /* Estilo do conteúdo do dropdown (inicialmente oculto) */
 .dropdown-content {
+    cursor: pointer;
     display: none;
-    /* Oculta o conteúdo */
     position: absolute;
-    /* Posição absoluta */
     background-color: #f9f9f9;
-    /* Cor de fundo */
     min-width: 160px;
-    /* Largura mínima */
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    /* Sombra */
     z-index: 1;
-    /* Z-index para sobrepor */
+    text-align: center;
 }
 
 /* Estilo dos links dentro do dropdown */
@@ -290,8 +297,7 @@ img.carrinho {
 
 /* Altera a cor dos links do dropdown ao passar o mouse */
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
-    /* Cor de fundo ao passar o mouse */
+    background-color: #aeda9cd8;
 }
 
 /* Mostra o dropdown ao passar o mouse sobre o container */
@@ -305,6 +311,7 @@ img.carrinho {
     background-color: #3e8e41;
     /* Cor de fundo do botão ao passar o mouse */
 }
+
 
 @media (max-width: 800px) {
     .intro-content,

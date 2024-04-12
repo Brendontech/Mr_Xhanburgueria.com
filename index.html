@@ -29,7 +29,7 @@
         <div class="main-content menu-content">
             <h1 onclick="getElementById('close-menu').checked = false;">
                 <a class="logo" href="#home">
-                    <img src="/assets/img/faustino.png" alt="">
+                    <img src="/assets/img/logo_MrX-removebg-preview.png" alt="">
                 </a>
             </h1>
 
@@ -41,13 +41,13 @@
                     <li><a href="#pricing">tabela de valores</a></li>
                     <li><a href="#Contact">Contato</a></li>
                     <li><a href="/assets/html/login.html">Login</a></li>
-                    <a class="ocult-car" href="/assets/html/carrinho.html">
-                        <img class="carrinho" src="/assets/img/R__1_-removebg-preview.png">
-                    </a>
                 </ul>
             </nav>
+            <a class="ocult-car" href="/assets/html/carrinho.html">
+                <img class="carrinho" src="/assets/img/R__1_-removebg-preview.png">
+            </a>
         </div>
-    </aside>
+    </aside>''
     <section id="grid-one" class="grid-one section">
         <div class=" main-content grid-one-content">
             <h2 class="grid-main-heading">Combos</h2>
@@ -62,7 +62,7 @@
                     <p id="desconto"> de R$ <i><del> 59,90</p></del></i>
                     <p id="valor">Por R$<i> 49,90</i></p>
                     <div class="comprar-btn-alinhar">
-                        <a class="btn-comprar-hbg" href="#">Comprar</a>
+                        <a class="btn-comprar-hbg" onclick="addToCart('Item 1', 49.90)">Comprar</a>
                     </div>
                 </div>
                 <div>
@@ -74,7 +74,7 @@
                     <p id="desconto"> de R$ <i><del> 79,90</p></del></i>
                     <p id="valor">Por R$<i> 59,90</i></p>
                     <div class="comprar-btn-alinhar">
-                        <a class="btn-comprar-hbg" href="#">Comprar</a>
+                        <a class="btn-comprar-hbg" onclick="addToCart('Item 2', 59.90)">Comprar</a>
                     </div>
                 </div>
                 <div>
@@ -86,13 +86,12 @@
                     <p id="desconto"> de R$ <i><del> 120,00</p></del></i>
                     <p id="valor">Por R$<i> 119,90</i></p>
                     <div class="comprar-btn-alinhar">
-                        <a class="btn-comprar-hbg" href="#">Comprar</a>
+                        <a class="btn-comprar-hbg" onclick="addToCart('Item 3', 119.90)">Comprar</a>
                     </div>
                 </div>
             </div>
     </section>
     <section id="gallery" class=" grid-one section">
-
         <div class="main-content grid-one-content">
             <h2 class="grid-main-heading">Cardápio</h2>
             <p class="grid-description"> Confira os melhores preços</p>
@@ -101,10 +100,10 @@
                     <div class="bloco-img">
                         <img src="/assets/img/hamburguer/combo-5.png">
                         <p> Confira os melhores preços</p>
-                        <p id="desconto"> de R$ <i><del> 120,00</p></del></i>
-                        <p id="valor">Por R$<i> 119,90</i></p>
+                        <p id="desconto"> de R$ <i><del> 40,00</p></del></i>
+                        <p id="valor">Por R$<i> 34,90</i></p>
                         <div class="comprar-btn-alinhar">
-                            <a class="btn-comprar-hbg" href="#">Comprar</a>
+                            <a class="btn-comprar-hbg" onclick="addToCart('Item 4', 34.90)">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -113,10 +112,10 @@
                     <div class="bloco-img">
                         <img src="/assets/img/hamburguer/combo-5.png">
                         <p> Confira os melhores preços</p>
-                        <p id="desconto"> de R$ <i><del> 120,00</p></del></i>
-                        <p id="valor">Por R$<i> 119,90</i></p>
+                        <p id="desconto"> de R$ <i><del> 28,00</p></del></i>
+                        <p id="valor">Por R$<i> 25,90</i></p>
                         <div class="comprar-btn-alinhar">
-                            <a class="btn-comprar-hbg" href="#">Comprar</a>
+                            <a class="btn-comprar-hbg" onclick="addToCart('Item 5', 25.90)">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -124,10 +123,10 @@
                     <div class="gallery-img">
                         <img src="/assets/img/hamburguer/combo-5.png">
                         <p> Confira os melhores preços</p>
-                        <p id="desconto"> de R$ <i><del> 120,00</p></del></i>
-                        <p id="valor">Por R$<i> 119,90</i></p>
+                        <p id="desconto"> de R$ <i><del> 28,00</p></del></i>
+                        <p id="valor">Por R$<i> 25,90</i></p>
                         <div class="comprar-btn-alinhar">
-                            <a class="btn-comprar-hbg" href="#">Comprar</a>
+                            <a class="btn-comprar-hbg" onclick="addToCart('Item 6', 25.90)">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -135,10 +134,10 @@
                     <div class="bloco-img">
                         <img src="/assets/img/hamburguer/combo-5.png">
                         <p> Confira os melhores preços</p>
-                        <p id="desconto"> de R$ <i><del> 120,00</p></del></i>
-                        <p id="valor">Por R$<i> 119,90</i></p>
+                        <p id="desconto"> de R$ <i><del> 20,00</p></del></i>
+                        <p id="valor">Por R$<i> 17,00</i></p>
                         <div class="comprar-btn-alinhar">
-                            <a class="btn-comprar-hbg" href="#">Comprar</a>
+                            <a class="btn-comprar-hbg" onclick="addToCart('Item 7', 18.90)">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -146,10 +145,10 @@
                     <div class="bloco-img">
                         <img src="/assets/img/hamburguer/combo-5.png">
                         <p> Confira os melhores preços</p>
-                        <p id="desconto"> de R$ <i><del> 120,00</p></del></i>
-                        <p id="valor">Por R$<i> 119,90</i></p>
+                        <p id="desconto"> de R$ <i><del> 25,00</p></del></i>
+                        <p id="valor">Por R$<i> 22,90</i></p>
                         <div class="comprar-btn-alinhar">
-                            <a class="btn-comprar-hbg" href="#">Comprar</a>
+                            <a class="btn-comprar-hbg" onclick="addToCart('Item 8', 22.90)">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -157,10 +156,10 @@
                     <div class="bloco-img">
                         <img src="/assets/img/hamburguer/combo-5.png">
                         <p> Confira os melhores preços</p>
-                        <p id="desconto"> de R$ <i><del> 120,00</p></del></i>
-                        <p id="valor">Por R$<i> 119,90</i></p>
+                        <p id="desconto"> de R$ <i><del> 30,00</p></del></i>
+                        <p id="valor">Por R$<i> 27,90</i></p>
                         <div class="comprar-btn-alinhar">
-                            <a class="btn-comprar-hbg" href="#">Comprar</a>
+                            <a class="btn-comprar-hbg" onclick="addToCart('Item 9', 27.90)">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -168,22 +167,10 @@
                     <div class="bloco-img">
                         <img src="/assets/img/hamburguer/combo-5.png">
                         <p> Confira os melhores preços</p>
-                        <p id="desconto"> de R$ <i><del> 120,00</p></del></i>
-                        <p id="valor">Por R$<i> 119,90</i></p>
+                        <p id="desconto"> de R$ <i><del> 22,00</p></del></i>
+                        <p id="valor">Por R$<i> 19,90</i></p>
                         <div class="comprar-btn-alinhar">
-                            <a class="btn-comprar-hbg" href="#">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-img">
-                    <div class="bloco-img">
-                        <img src="/assets/img/hamburguer/combo-5.png">
-                        <p> Confira os melhores preços</p>
-                        <p id="desconto"> de R$ <i><del> 120,00</p></del></i>
-                        <p id="valor">Por R$<i> 119,90</i></p>
-                        <div class="comprar-btn-alinhar">
-                            <a class="btn-comprar-hbg" href="#">Comprar</a>
+                            <a class="btn-comprar-hbg" onclick="addToCart('Item 10', 19.90)">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -192,10 +179,10 @@
                     <div class="bloco-img">
                         <img src="/assets/img/hamburguer/combo-5.png">
                         <p> Confira os melhores preços</p>
-                        <p id="desconto"> de R$ <i><del> 120,00</p></del></i>
-                        <p id="valor">Por R$<i> 119,90</i></p>
+                        <p id="desconto"> de R$ <i><del> 20,00</p></del></i>
+                        <p id="valor">Por R$<i> 17,90</i></p>
                         <div class="comprar-btn-alinhar">
-                            <a class="btn-comprar-hbg" href="#">Comprar</a>
+                            <a class="btn-comprar-hbg" onclick="addToCart('Item 11', 17.90)">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -204,10 +191,22 @@
                     <div class="bloco-img">
                         <img src="/assets/img/hamburguer/combo-5.png">
                         <p> Confira os melhores preços</p>
-                        <p id="desconto"> de R$ <i><del> 120,00</p></del></i>
-                        <p id="valor">Por R$<i> 119,90</i></p>
+                        <p id="desconto"> de R$ <i><del> 32,00</p></del></i>
+                        <p id="valor">Por R$<i> 28,90</i></p>
                         <div class="comprar-btn-alinhar">
-                            <a class="btn-comprar-hbg" href="#">Comprar</a>
+                            <a class="btn-comprar-hbg" onclick="addToCart('Item 12', 28.90)">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-img">
+                    <div class="bloco-img">
+                        <img src="/assets/img/hamburguer/combo-5.png">
+                        <p> Confira os melhores preços</p>
+                        <p id="desconto"> de R$ <i><del> 33,00</p></del></i>
+                        <p id="valor">Por R$<i> 29,90</i></p>
+                        <div class="comprar-btn-alinhar">
+                            <a class="btn-comprar-hbg" onclick="addToCart('Item 13', 29.90)">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -217,10 +216,10 @@
                         <img src="/assets/img/hamburguer/combo-5.png">
                         <p> Confira os melhores preços</p>
                         <div class="">
-                            <p id="desconto"> de R$ <i><del> 120,00</p></del></i>
-                            <p id="valor">Por R$<i> 119,90</i></p>
+                            <p id="desconto"> de R$ <i><del> 29,00</p></del></i>
+                            <p id="valor">Por R$<i> 26,90</i></p>
                             <div class="comprar-btn-alinhar">
-                                <a class="btn-comprar-hbg" href="#">Comprar</a>
+                                <a class="btn-comprar-hbg" onclick="addToCart('Item 14', 26.90)">Comprar</a>
                             </div>
                         </div>
                     </div>
@@ -230,10 +229,10 @@
                     <div class="bloco-img">
                         <img src="/assets/img/hamburguer/combo-5.png">
                         <p> Confira os melhores preços</p>
-                        <p id="desconto"> de R$ <i><del> 120,00</p></del></i>
-                        <p id="valor">Por R$<i> 119,90</i></p>
+                        <p id="desconto"> de R$ <i><del> 18,70</p></del></i>
+                        <p id="valor">Por R$<i> 20,90</i></p>
                         <div class="comprar-btn-alinhar">
-                            <a class="btn-comprar-hbg" href="#">Comprar</a>
+                            <a class="btn-comprar-hbg" onclick="addToCart('Item 15', 20.90)">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -242,163 +241,65 @@
             </div>
         </div>
     </section>
-    <div class="dropdown">
-        <button class="dropbtn">Selecione um item</button>
-        <div class="dropdown-content" id="item1">
-            <a href="#" onclick="addToCart('Item 1', 10)">Item 1 (R$ 10,00)</a>
-            <a href="#" onclick="addToCart('Item 1', 10)">Item 2 (R$ 10,00)</a>
-            <a href="#" onclick="addToCart('Item 1', 10)">Item 3 (R$ 10,00)</a>
-        </div>
-    </div>
 
-    <div id="cart">
-        <h2>Carrinho de Compras</h2>
-        <ul id="cartItems">
-            <!-- Itens selecionados serão adicionados aqui -->
-        </ul>
-        <p id="total">Total: R$ 0,00</p>
-    </div>
+    <section class="main-content top3-content">
+
+        <div id="cart">
+            <h2>Carrinho de Compras</h2>
+            <ul id="cartItems">
+                <!-- Itens selecionados serão adicionados aqui -->
+            </ul>
+            <p id="total">Total: R$ 0,00</p>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Selecione um item</button>
+            <div class="dropdown-content" id="item1">
+                <a onclick="addToCart('Item 1', 10)">Item 1 (R$ 10,00)</a>
+                <a onclick="addToCart('Item 2', 10)">Item 2 (R$ 10,00)</a>
+                <a onclick="addToCart('Item 3', 10)">Item 3 (R$ 10,00)</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
 
     <section id="pricing" class=" section">
         <div class="main-content top3-content">
             <h2>Cremes e sucos</h2>
             <p>Cremes e sucos feitos sempre com a poupa da fruta</p>
-            <div class="responsive-table">
+            <div class="Bebidas-option">
+                <div class="dropdown creme-opition">
+                    <button class="dropbtn">Cremes</button>
+                    <div class="dropdown-content" id="item1">
+                        <a onclick="addToCart('Creme de Morango', 8.90)">Creme de Morango (R$ 8,90)</a>
+                        <a onclick="addToCart('Creme de Maracujá', 8.90)">Creme de Maracujá (R$ 8,90)</a>
+                        <a onclick="addToCart('Creme de Cupuaçu', 8.90)">Creme de Cupuaçu (R$ 8,90)</a>
+                        <a onclick="addToCart('Creme de Limão', 8.90)">Creme de Limão (R$ 8,90)</a>
+                    </div>
+                </div>
 
-                <table>
-                    <caption>Cremes</caption>
 
-                    <thead>
-                        <tr>
-                            <th>Morango</th>
-                            <th>Maracujá</th>
-                            <th>Cupuaçu</th>
-                            <th>Limão</th>
-                        </tr>
-                    </thead>
-
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-
-                            <td>Valor <span class="precoCremeSuco">R$ 8,90</span></td>
-                        </tr>
-                    </tfoot>
-                </table>
+                <div class="dropdown creme-opition">
+                    <button class="dropbtn">Cremes</button>
+                    <div class="dropdown-content" id="item1">
+                        <a onclick="addToCart('Creme de Morango', 8.90)">Creme de Morango (R$ 8,90)</a>
+                        <a onclick="addToCart('Creme de Maracujá', 8.90)">Creme de Maracujá (R$ 8,90)</a>
+                        <a onclick="addToCart('Creme de Cupuaçu', 8.90)">Creme de Cupuaçu (R$ 8,90)</a>
+                        <a onclick="addToCart('Creme de Limão', 8.90)">Creme de Limão (R$ 8,90)</a>
+                    </div>
+                </div>
+                <div class="dropdown creme-opition">
+                    <button class="dropbtn">Cremes</button>
+                    <div class="dropdown-content" id="item1">
+                        <a onclick="addToCart('Creme de Morango', 8.90)">Creme de Morango (R$ 8,90)</a>
+                        <a onclick="addToCart('Creme de Maracujá', 8.90)">Creme de Maracujá (R$ 8,90)</a>
+                        <a onclick="addToCart('Creme de Cupuaçu', 8.90)">Creme de Cupuaçu (R$ 8,90)</a>
+                        <a onclick="addToCart('Creme de Limão', 8.90)">Creme de Limão (R$ 8,90)</a>
+                    </div>
+                </div>
             </div>
-            <div class="responsive-table">
-
-                <table>
-                    <caption>Sucos</caption>
-
-                    <thead>
-                        <tr>
-                            <th>Abacaxi</th>
-                            <th>Cupuaçu</th>
-                            <th>Limão</th>
-                            <th>Maracujá</th>
-                            <th>Morango</th>
-                        </tr>
-                    </thead>
-
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>Valor <span class="precoCremeSuco">R$ 6,90</span></td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
-            <h2 id="refri">Refrigerantes</h2>
-            <div class="responsive-table">
-
-                <table>
-                    <caption>2 Litros</caption>
-
-                    <thead>
-                        <tr>
-                            <th>Coca-cola</th>
-                            <th>Pepsi</th>
-                            <th>Sprite</th>
-                            <th>Sukita Laranja</th>
-                            <th>BigBoy Limão</th>
-                            <th>Guaraná Jesus</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>R$ 12,90</td>
-                            <td>R$ 10,90</td>
-                            <td>R$ 8,90</td>
-                            <td>R$ 8,90</td>
-                            <td>R$ 8,90</td>
-                            <td>R$ 12,90</td>
-                        </tr>
-                    </tbody>
-
-                </table>
-
-                <table>
-                    <caption>1 Litro</caption>
-
-                    <thead>
-                        <tr>
-                            <th>Coca-cola</th>
-                            <th>Pepsi</th>
-                            <th>Sprite</th>
-                            <th>Sukita Laranja</th>
-                            <th>BigBoy Limão</th>
-                            <th>Guaraná Jesus</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>R$ 10,90</td>
-                            <td>R$ 8,90</td>
-                            <td>R$ 6,90</td>
-                            <td>R$ 6,90</td>
-                            <td>R$ 6,90</td>
-                            <td>R$ 10,90</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <table>
-                    <caption>Lata</caption>
-
-                    <thead>
-                        <tr>
-                            <th>Coca-cola</th>
-                            <th>Pepsi</th>
-                            <th>Sprite</th>
-                            <th>Sukita Laranja</th>
-                            <th>BigBoy Limão</th>
-                            <th>Guaraná Jesus</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>R$ 6,90</td>
-                            <td>R$ 5,90</td>
-                            <td>R$ 4,90</td>
-                            <td>R$ 4,90</td>
-                            <td>R$ 4,90</td>
-                            <td>R$ 6,90</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
         </div>
     </section>
     <form action="https://formsubmit.co/fernandesbrendon83@gmail.com" method="POST">
