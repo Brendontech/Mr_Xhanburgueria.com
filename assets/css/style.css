@@ -44,7 +44,7 @@
 
 .grid-main-heading {
     margin-bottom: 1rem;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
 }
 
 .grid-description {
@@ -341,7 +341,9 @@ img.carrinho {
     border-radius: 5px;
     cursor: pointer;
 }
-
+.ocult-carrinho-index{
+    display: none;
+}
 @media (max-width: 800px) {
     .intro-content,
     .grid {
