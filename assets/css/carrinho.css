@@ -1,6 +1,12 @@
 .menu-content {
     height: 15vh;
 }
+#total.p{
+    color: black;
+}
+.main-content {
+    padding: 0;
+}
 .logo-carrinho{
     height: 100%;
 }
@@ -93,14 +99,19 @@ span.icon24 {
     cursor: pointer;
     text-align: center;
 }
-.finalizar{
+a.finalizar{
+    text-align: center;
+    justify-content: center;
+    display: flex;
     padding: 5px;
     background-color: yellowgreen;
+    width: 20vh;
+}
+.finalizar{
     cursor: pointer;
     border-radius: 5px;
-    width: 61vh;
+    width: 100%;
     color: black;
-
 }
 @media (max-width: 800px) {
     .menu-spacing {

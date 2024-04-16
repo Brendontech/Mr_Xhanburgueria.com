@@ -291,7 +291,7 @@ img.carrinho {
     display: block;
 }
 .produtos-carrinho p{
-    padding: 10px;
+    margin-left: 2vh;
     font-size: 1.6rem;
 }
 .creme-opition {
