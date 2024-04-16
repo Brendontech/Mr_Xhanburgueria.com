@@ -270,7 +270,13 @@ img.carrinho {
     cursor: pointer;
     /* Cursor de ponteiro */
 }
-
+#total{
+    display: flex;
+    float: right;
+}
+#cart {
+    height: 100%;
+}
 /* Estilo do conteúdo do dropdown (inicialmente oculto) */
 .dropdown-content {
     cursor: pointer;
@@ -364,8 +370,6 @@ img.carrinho {
         z-index: 2;
         top: 2rem;
         right: 2rem;
-        background: var(--primary-color);
-        color: var(--white-color);
         font-size: 3rem;
         line-height: 3rem;
         width: 3rem;
