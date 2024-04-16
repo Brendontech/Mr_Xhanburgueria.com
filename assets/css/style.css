@@ -319,6 +319,25 @@ img.carrinho {
 }
 
 
+#cartItems {
+    font-size: 1.6rem;
+    list-style: none;
+    padding: 1px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#cartItems li {
+    height: 20vh;
+}
+#cartItems button{
+
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+
 @media (max-width: 800px) {
     .intro-content,
     .grid {
