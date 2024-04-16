@@ -24,6 +24,7 @@
         <a href="/assets/html/carrinho.html">
             <img class="carrinho" src="assets/img/R__1_-removebg-preview.png" alt="">
         </a>
+        <p id="total"></p>
     </div>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
@@ -42,9 +43,13 @@
                     <li><a href="/assets/html/login.html">Login</a></li>
                 </ul>
             </nav>
-            <a class="ocult-car" href="/assets/html/carrinho.html">
-                <img class="carrinho" src="/assets/img/R__1_-removebg-preview.png">
-            </a>
+            <div class="produtos-carrinho">
+                <a href="/assets/html/carrinho.html">
+                    <img class="carrinho" src="assets/img/R__1_-removebg-preview.png" alt="">
+                    <p id="total"></p>
+                </a>
+            </div>
+            
         </div>
     </aside>
     <section id="grid-one" class="grid-one section">
@@ -251,8 +256,8 @@
             <p id="total">Total: R$ 0,00</p>
         </div>
         <div class="dropdown">
-            <button class="dropbtn">Selecione um item</button>
             <div class="dropdown-content" id="item1">
+                <button class="dropbtn">Selecione um item</button>
                 <a onclick="addToCart('Item 1', 10)">Item 1 (R$ 10,00)</a>
                 <a onclick="addToCart('Item 2', 10)">Item 2 (R$ 10,00)</a>
                 <a onclick="addToCart('Item 3', 10)">Item 3 (R$ 10,00)</a>
@@ -264,25 +269,14 @@
 
 
 
-    <section id="pricing" class=" section">
+    <section id="pricing" class="section">
         <div class="main-content top3-content">
-            <h2>Cremes e sucos</h2>
+            <h2>Bebidas</h2>
             <p>Cremes e sucos feitos sempre com a poupa da fruta</p>
             <div class="Bebidas-option">
-                <div class="dropdown creme-opition">
+                <div class="dropdown creme-opition" >
                     <button class="dropbtn">Cremes</button>
-                    <div class="dropdown-content" id="item1">
-                        <a onclick="addToCart('Creme de Morango', 8.90)">Creme de Morango (R$ 8,90)</a>
-                        <a onclick="addToCart('Creme de Maracujá', 8.90)">Creme de Maracujá (R$ 8,90)</a>
-                        <a onclick="addToCart('Creme de Cupuaçu', 8.90)">Creme de Cupuaçu (R$ 8,90)</a>
-                        <a onclick="addToCart('Creme de Limão', 8.90)">Creme de Limão (R$ 8,90)</a>
-                    </div>
-                </div>
-
-
-                <div class="dropdown creme-opition">
-                    <button class="dropbtn">Cremes</button>
-                    <div class="dropdown-content" id="item1">
+                    <div class="dropdown-content">
                         <a onclick="addToCart('Creme de Morango', 8.90)">Creme de Morango (R$ 8,90)</a>
                         <a onclick="addToCart('Creme de Maracujá', 8.90)">Creme de Maracujá (R$ 8,90)</a>
                         <a onclick="addToCart('Creme de Cupuaçu', 8.90)">Creme de Cupuaçu (R$ 8,90)</a>
@@ -290,8 +284,17 @@
                     </div>
                 </div>
                 <div class="dropdown creme-opition">
-                    <button class="dropbtn">Cremes</button>
-                    <div class="dropdown-content" id="item1">
+                    <button class="dropbtn">Sucos</button>
+                    <div class="dropdown-content">
+                        <a onclick="addToCart('Creme de Morango', 8.90)">Creme de Morango (R$ 8,90)</a>
+                        <a onclick="addToCart('Creme de Maracujá', 8.90)">Creme de Maracujá (R$ 8,90)</a>
+                        <a onclick="addToCart('Creme de Cupuaçu', 8.90)">Creme de Cupuaçu (R$ 8,90)</a>
+                        <a onclick="addToCart('Creme de Limão', 8.90)">Creme de Limão (R$ 8,90)</a>
+                    </div>
+                </div>
+                <div class="dropdown creme-opition" >
+                    <button class="dropbtn">Refrigerante</button>
+                    <div class="dropdown-content">
                         <a onclick="addToCart('Creme de Morango', 8.90)">Creme de Morango (R$ 8,90)</a>
                         <a onclick="addToCart('Creme de Maracujá', 8.90)">Creme de Maracujá (R$ 8,90)</a>
                         <a onclick="addToCart('Creme de Cupuaçu', 8.90)">Creme de Cupuaçu (R$ 8,90)</a>
@@ -301,6 +304,7 @@
             </div>
         </div>
     </section>
+    
     <form action="https://formsubmit.co/fernandesbrendon83@gmail.com" method="POST">
         <section id="Contact" class="intro section">
             <input type="hidden" name="_next" value="https://mrxsanduicheria.netlify.app/assets/html/sucesso.html" />

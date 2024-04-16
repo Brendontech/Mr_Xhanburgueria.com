@@ -1,6 +1,13 @@
 .menu-content {
     height: 15vh;
 }
+.logo-carrinho{
+    height: 100%;
+}
+.logo-carrinho img{
+
+    padding: 1vh;
+}
 h2 {
     font-size: 4rem;
 }
@@ -64,13 +71,37 @@ span.icon24 {
     border: none;
     border-radius: 5px;
 }
-
 .qtd_item {
     height: 25px;
     margin: 0 auto;
     margin-top: 2px;
 }
+.btn-finalizar{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.grid-finalizar{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-finalizar a {
+    padding: 5px;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+}
+.finalizar{
+    padding: 5px;
+    background-color: yellowgreen;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 61vh;
+    color: black;
 
+}
 @media (max-width: 800px) {
     .menu-spacing {
         box-shadow: 0px 0px 8px 1px var(--secondary-color);

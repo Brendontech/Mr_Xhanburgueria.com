@@ -85,11 +85,14 @@ function updateCartDisplay() {
 }
 
 function updateTotalDisplay() {
-    document.getElementById('total').textContent = 'Total: R$ ' + Math.max(cartTotal, 0).toFixed(2);
+    document.getElementById('total').textContent = ' R$ ' + Math.max(cartTotal, 0).toFixed(2);
 }
 
 function saveCartToLocalStorage() {
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
     localStorage.setItem('cartTotal', cartTotal.toFixed(2));
 }
-
+function showDropdownContent(dropdown) {
+    var dropdownContent = dropdown.querySelector('.dropdown-content');
+    dropdownContent.classList.toggle('show');
+}
