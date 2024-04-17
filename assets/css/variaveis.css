@@ -1,7 +1,7 @@
 :root{
-    --primary-color: #0a1128;
-    --white-color: #ffff;
-    --ligth-gray-color:#eeee;
+    --primary-color: #fdfdfd;
+    --white-color: #000000d0;
+    --ligth-gray-color:#000000;
     --gap:3rem;
-    --secondary-color: rgba(204, 55, 55, 0.781);
+    --secondary-color: rgba(158, 8, 8, 0.979);
 }

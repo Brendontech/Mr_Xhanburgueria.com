@@ -1,6 +1,5 @@
 .intro-content {
     position: relative;
-    /* top: -6rem; */
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
@@ -129,7 +128,7 @@
 .form-group input,
 .form-group textarea {
     border: none;
-    background: var(--white-color);
+    background: var(--primary-color);
     padding: 1.5rem 2rem;
     width: 100%;
     font-size: 3rem;
@@ -144,7 +143,7 @@
 .form-group button {
     border: 0.5rem solid var(--white-color);
     background: none;
-    color: var(--white-color);
+    color: var(--primary-color);
     padding: 1.5rem 2rem;
     font-size: 3rem;
     cursor: pointer;
@@ -152,8 +151,8 @@
 }
 
 .form-group button:hover {
-    background: var(--white-color);
-    color: var(--primary-color);
+    background: var(--primary-color);
+    color: var(--white-color);
 }
 
 .form-group::placeholder {
@@ -190,7 +189,7 @@
 }
 
 .heart {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .close-menu {
@@ -345,6 +344,20 @@ img.carrinho {
     display: none;
 }
 @media (max-width: 800px) {
+    h2{
+        font-size: 4rem;
+    }
+    .grid h3::before{
+        font-size: 4rem;
+    }
+    .grid h3 {
+        font-size: 2rem;
+        position: relative;
+        padding-left: 0rem;
+    }
+    p {
+        font-size: 1.4rem;
+    }
     .intro-content,
     .grid {
         grid-template-columns: 1fr;
@@ -356,7 +369,7 @@ img.carrinho {
     }
 
     .gallery-img {
-        width: 100%;
+        width: 60%;
         max-width: 100%;
         max-height: 100%;
     }
@@ -395,10 +408,10 @@ img.carrinho {
         content: '☰';
         position: fixed;
         z-index: 2;
-        top: 4rem;
+        top: 1.6rem;
         right: 2rem;
-        font-size: 4rem;
-        line-height: 2rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
         width: 3rem;
         height: 3rem;
         text-align: center;
@@ -415,5 +428,13 @@ img.carrinho {
     }
     #cartItems li {
         padding: 5px;
+    }
+    img.carrinho{
+        height: 10vh;
+        width: 10vh;
+        padding: 3vh;
+    }
+    .produtos-carrinho p{
+        font-size: 1.2rem;
     }
 }

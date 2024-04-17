@@ -1,19 +1,23 @@
 .menu-content {
     height: 15vh;
 }
-#total.p{
+
+#total.p {
     color: black;
 }
+
 .main-content {
     padding: 0;
 }
-.logo-carrinho{
+
+.logo-carrinho {
     height: 100%;
 }
-.logo-carrinho img{
 
+.logo-carrinho img {
     padding: 1vh;
 }
+
 h2 {
     font-size: 4rem;
 }
@@ -60,6 +64,7 @@ span.icon24 {
     background: url(/assets/img/icon_pedido.png) no-repeat;
     margin-right: 15px;
 }
+
 #cartItems {
     font-size: 1.6rem;
     list-style: none;
@@ -68,38 +73,45 @@ span.icon24 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
 #cartItems li {
     height: 20vh;
 }
-#cartItems button{
+
+#cartItems button {
 
     padding: 5px;
     border: none;
     border-radius: 5px;
 }
+
 .qtd_item {
     height: 25px;
     margin: 0 auto;
     margin-top: 2px;
 }
-.btn-finalizar{
+
+.btn-finalizar {
     height: 20vh;
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.grid-finalizar{
+
+.grid-finalizar {
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
 }
+
 .btn-finalizar a {
     padding: 5px;
     color: black;
     cursor: pointer;
     text-align: center;
 }
-a.finalizar{
+
+a.finalizar {
     text-align: center;
     justify-content: center;
     display: flex;
@@ -107,17 +119,20 @@ a.finalizar{
     background-color: yellowgreen;
     width: 20vh;
 }
-.finalizar{
+
+.finalizar {
     cursor: pointer;
     border-radius: 5px;
     width: 100%;
     color: black;
 }
+
 @media (max-width: 800px) {
     .menu-spacing {
         box-shadow: 0px 0px 8px 1px var(--secondary-color);
         height: 15vh;
     }
+
     .menu-content {
         height: 100%;
     }
