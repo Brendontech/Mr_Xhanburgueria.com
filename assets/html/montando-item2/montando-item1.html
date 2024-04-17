@@ -1,0 +1,89 @@
+<DOCTYPE html>
+    <html lang="pt-Br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> ♡ Mr.X Sanduicheiria </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/classes.css">
+        <link rel="stylesheet" href="/assets/css/menu.css">
+        <link rel="stylesheet" href="/assets/css/elements.css">
+        <link rel="stylesheet" href="/assets/css/variaveis.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/montando-item/montando-item1.css">
+    </head>
+
+    <body class="clr-td">
+        <input id="close-menu" class="close-menu" type="checkbox" aria-label="Fechar menu" role="button">
+        <label class="close-menu-label" for="close-menu" title="Close menu"></label>
+        <div class="produtos-carrinho">
+            <a href="/assets/html/carrinho.html">
+                <img class="carrinho" src="/assets/img/carrinho-de-compras (2).png" alt="">
+            </a>
+        </div>
+        <aside class="menu white-bg">
+            <div class="main-content menu-content">
+                <h1 onclick="getElementById('close-menu').checked = false;">
+                    <a class="logo" href="#home">
+                        <img src="/assets/img/logo_MrX-removebg-preview.png" alt="">
+                    </a>
+                </h1>
+                <nav>
+                    <ul onclick="getElementById('close-menu').checked = false;">
+                        <li><a href="#intro">PROMOÇÕES</a></li>
+                        <li><a href="#grid-one">COMBOS</a></li>
+                        <li><a href="#gallery">CARDÁPIO</a></li>
+                        <li><a href="#pricing">BEBIDAS</a></li>
+                        <li><a href="#Contact">CONTATO</a></li>
+                        <li><a href="/assets/html/login.html">LOGIN</a></li>
+                    </ul>
+                </nav>
+                <a class="ocult-car" href="/assets/html/carrinho.html">
+                    <img class="carrinho" src="/assets/img/carrinho-de-compras (2).png">
+                </a>
+            </div>
+        </aside>
+        <section class="main-content top3-content">
+            <div id="cart">
+                <h2>Montar Pedido</h2>
+                <ul id="cartItems"></ul>
+            </div>
+            <p id="total"></p>
+            <div class="opcao1" onclick="toggleSelection('HAMBÚRGUER CASEIRO', 'HAMBÚRGUER CASEIRO', 6.00)">
+                <div class="color-fnd">
+                    <div id="HAMBÚRGUER CASEIRO" class="item"></div>
+                </div>
+                <p>HAMBÚRGUER CASEIRO</p>
+                <p>R$ 6,00</p>
+            </div>
+            <div class="opcao1" onclick="toggleSelection('LOMBO SUÍNO', 'LOMBO SUÍNO', 6.00)">
+                <div class="color-fnd">
+                    <div id="LOMBO SUÍNO" class="item"></div>
+                </div>
+                <p>LOMBO SUÍNO</p>
+                <p>R$ 6,00</p>
+            </div>
+            <div class="opcao1" onclick="toggleSelection('FILÉ DE FRANGO', 'FILÉ DE FRANGO', 6.00)">
+                <div class="color-fnd">
+                    <div id="FILÉ DE FRANGO" class="item"></div>
+                </div>
+                <p>FILÉ DE FRANGO</p>
+                <p>R$ 6,00</p>
+            </div> 
+            <div class="opcao1" onclick="toggleSelection('OVO', 'OVO', 3.00)">
+                <div class="color-fnd">
+                    <div id="OVO" class="item"></div>
+                </div>
+                <p>OVO</p>
+                <p>R$ 3,00</p>
+            </div> 
+        </section>        
+        <script src="/assets/js/index.js"></script>
+    </body>
+
+    </html>

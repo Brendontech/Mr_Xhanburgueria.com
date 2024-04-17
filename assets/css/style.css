@@ -253,7 +253,7 @@ img.carrinho {
 
 /* Estilo do botão dropdown */
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: var(--secondary-color);
     /* Cor de fundo */
     color: white;
     /* Cor do texto */
@@ -266,16 +266,13 @@ img.carrinho {
     cursor: pointer;
     /* Cursor de ponteiro */
 }
-#cart {
-    height: 100%;
-}
 
 /* Estilo do conteúdo do dropdown (inicialmente oculto) */
 .dropdown-content {
     cursor: pointer;
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: var(--ligth-gray-color);
     min-width: 160px;
     z-index: 1;
 }
@@ -301,7 +298,7 @@ img.carrinho {
 
 /* Altera a cor dos links do dropdown ao passar o mouse */
 .dropdown-content a:hover {
-    background-color: #aeda9cd8;
+    background-color: var(--secondary-color);
 }
 
 /* Mostra o dropdown ao passar o mouse sobre o container */
@@ -312,7 +309,7 @@ img.carrinho {
 
 /* Altera a cor de fundo do botão dropdown quando o conteúdo é exibido */
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: rgba(247, 214, 26, 0.781)
     /* Cor de fundo do botão ao passar o mouse */
 }
 

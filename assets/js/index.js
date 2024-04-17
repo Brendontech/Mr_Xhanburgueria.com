@@ -8,39 +8,33 @@ window.onload = function() {
         updateCartDisplay();
         updateTotalDisplay();
     } else {
-        updateTotalDisplay(); // Exibir o valor total inicialmente como 0
+        updateTotalDisplay();
     }
 }
 
 function addToCart(item, price) {
     if (cartItems.length === 0) {
-        cartTotal = 0; // Resetar o valor total para 0 se não houver itens no carrinho
+        cartTotal = 0;
     }
     cartItems.push({ item, price, quantity: 1 });
-    console.log("Item adicionado ao carrinho:", item, price);
     updateCartDisplay();
-    cartTotal += price; // Adiciona apenas o preço do item ao carrinho
-    console.log("Total do carrinho após adicionar:", cartTotal);
+    cartTotal += price;
     updateTotalDisplay();
     saveCartToLocalStorage();
 }
 
 function removeFromCart(index) {
     const removedItem = cartItems.splice(index, 1)[0];
-    console.log("Item removido do carrinho:", removedItem.item, removedItem.price);
     updateCartDisplay();
-    cartTotal -= removedItem.price * removedItem.quantity; // Corrigido: Subtrai o preço do item multiplicado pela quantidade
-    console.log("Total do carrinho após remover:", cartTotal);
+    cartTotal -= removedItem.price * removedItem.quantity;
     updateTotalDisplay();
     saveCartToLocalStorage();
 }
 
 function increaseQuantity(index) {
     cartItems[index].quantity++;
-    console.log("Quantidade do item aumentada:", cartItems[index].item);
     updateCartDisplay();
-    cartTotal += cartItems[index].price; // Adiciona apenas o preço do item ao carrinho
-    console.log("Total do carrinho após aumentar a quantidade:", cartTotal);
+    cartTotal += cartItems[index].price;
     updateTotalDisplay();
     saveCartToLocalStorage();
 }
@@ -48,10 +42,8 @@ function increaseQuantity(index) {
 function decreaseQuantity(index) {
     if (cartItems[index].quantity > 1) {
         cartItems[index].quantity--;
-        console.log("Quantidade do item diminuída:", cartItems[index].item);
         updateCartDisplay();
-        cartTotal -= cartItems[index].price; // Subtrai apenas o preço do item do carrinho
-        console.log("Total do carrinho após diminuir a quantidade:", cartTotal);
+        cartTotal -= cartItems[index].price;
         updateTotalDisplay();
         saveCartToLocalStorage();
     }
@@ -92,7 +84,25 @@ function saveCartToLocalStorage() {
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
     localStorage.setItem('cartTotal', cartTotal.toFixed(2));
 }
-function showDropdownContent(dropdown) {
-    var dropdownContent = dropdown.querySelector('.dropdown-content');
-    dropdownContent.classList.toggle('show');
+
+function toggleSelection(itemId, item, price) {
+    var itemElement = document.getElementById(itemId);
+    if (itemElement.classList.contains('selected')) {
+        itemElement.classList.remove('selected');
+        removeFromCartByItem(item); // Remove o item do carrinho
+    } else {
+        itemElement.classList.add('selected');
+        addToCart(item, price); // Adiciona o item ao carrinho
+    }
+}
+
+function removeFromCartByItem(item) {
+    const index = cartItems.findIndex(cartItem => cartItem.item === item);
+    if (index !== -1) {
+        const removedItem = cartItems.splice(index, 1)[0];
+        cartTotal -= removedItem.price * removedItem.quantity;
+        updateCartDisplay();
+        updateTotalDisplay();
+        saveCartToLocalStorage();
+    }
 }
