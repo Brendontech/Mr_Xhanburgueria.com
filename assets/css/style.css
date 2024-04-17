@@ -47,7 +47,9 @@
 }
 
 .grid-description {
-    padding-bottom: 5rem;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    background-color: var(--secondary-color);
 }
 
 .grid {
@@ -203,10 +205,6 @@
     background-image: none;
 }
 
-caption {
-    color: blue;
-}
-
 .precoCremeSuco {
     color: rgba(116, 155, 56, 0.941);
 }
@@ -228,14 +226,21 @@ img.carrinho {
 
 .btn-comprar-hbg {
     padding: 1vh;
-    width: 30vh;
+    width: 20vh;
+    font-size: larger;
+    font-size: 1.4rem;
     cursor: pointer;
-    color: black;
+    color: rgb(240, 239, 239);
     text-align: center;
-    background-color: rgb(238, 241, 18);
+    background-color: var(--secondary-color);
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     /* Sombra para o brilho */
+}
+.btn-comprar-hbg:hover {
+    background-color: rgba(247, 214, 26, 0.781);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    /* Sombra maior quando passar o mouse */
 }
 .Bebidas-option {
     width: 100%;
@@ -245,11 +250,6 @@ img.carrinho {
     align-items: center;
 }
 
-.btn-comprar-hbg:hover {
-    background-color: yellowgreen;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    /* Sombra maior quando passar o mouse */
-}
 
 /* Estilo do botão dropdown */
 .dropbtn {
@@ -341,6 +341,11 @@ img.carrinho {
 .ocult-carrinho-index{
     display: none;
 }
+p.ingredientes{
+    font-size: 1.2rem;
+    text-align: initial;
+}
+
 @media (max-width: 800px) {
     h2{
         font-size: 4rem;
@@ -409,7 +414,7 @@ img.carrinho {
         content: '☰';
         position: fixed;
         z-index: 2;
-        top: 1.6rem;
+        top: 2rem;
         right: 2rem;
         font-size: 3rem;
         line-height: 2.5rem;
