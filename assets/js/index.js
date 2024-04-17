@@ -104,5 +104,7 @@ function removeFromCartByItem(item) {
         updateCartDisplay();
         updateTotalDisplay();
         saveCartToLocalStorage();
+        console.log
     }
+    
 }

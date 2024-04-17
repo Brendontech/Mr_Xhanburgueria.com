@@ -35,7 +35,21 @@
     background-color: rgba(22, 22, 83, 0.705);
 }
 .opcao1 {
-    max-width: 250px;
+    max-width: 400px;
     display: flex;
     justify-content: space-between;
+}
+.concluir-ped {
+    width: 400px;
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 800px){
+    .menu-content {
+        margin-top: 5vh;
+        height: 5vh;
+        display: flex;
+    }
 }

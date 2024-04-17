@@ -19,35 +19,14 @@
     </head>
 
     <body class="clr-td">
-        <input id="close-menu" class="close-menu" type="checkbox" aria-label="Fechar menu" role="button">
-        <label class="close-menu-label" for="close-menu" title="Close menu"></label>
-        <div class="produtos-carrinho">
-            <a href="/assets/html/carrinho.html">
-                <img class="carrinho" src="/assets/img/carrinho-de-compras (2).png" alt="">
-            </a>
-        </div>
-        <aside class="menu white-bg">
-            <div class="main-content menu-content">
-                <h1 onclick="getElementById('close-menu').checked = false;">
-                    <a class="logo" href="#home">
-                        <img src="/assets/img/logo_MrX-removebg-preview.png" alt="">
-                    </a>
-                </h1>
-                <nav>
-                    <ul onclick="getElementById('close-menu').checked = false;">
-                        <li><a href="#intro">PROMOÇÕES</a></li>
-                        <li><a href="#grid-one">COMBOS</a></li>
-                        <li><a href="#gallery">CARDÁPIO</a></li>
-                        <li><a href="#pricing">BEBIDAS</a></li>
-                        <li><a href="#Contact">CONTATO</a></li>
-                        <li><a href="/assets/html/login.html">LOGIN</a></li>
-                    </ul>
-                </nav>
-                <a class="ocult-car" href="/assets/html/carrinho.html">
-                    <img class="carrinho" src="/assets/img/carrinho-de-compras (2).png">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked = false;">
+                <a class="logo" href="/index.html">
+                    <img src="/assets/img/logo_MrX-removebg-preview.png" alt="">
                 </a>
-            </div>
-        </aside>
+            </h1>
+        </div>
+
         <section class="main-content top3-content">
             <div id="cart">
                 <h2>Montar Pedido</h2>
@@ -74,15 +53,21 @@
                 </div>
                 <p>FILÉ DE FRANGO</p>
                 <p>R$ 6,00</p>
-            </div> 
+            </div>
             <div class="opcao1" onclick="toggleSelection('OVO', 'OVO', 3.00)">
                 <div class="color-fnd">
                     <div id="OVO" class="item"></div>
                 </div>
                 <p>OVO</p>
                 <p>R$ 3,00</p>
-            </div> 
-        </section>        
+            </div>
+            <div class="concluir-ped">
+                <div class="btn-concluir">
+                    <a class="btn-comprar-hbg" href="/assets/html/carrinho.html">FINALIZAR</a>
+                    <a class="btn-comprar-hbg" href="/index.html#gallery">CARDÁPIO</a>
+                </div>
+            </div>
+        </section>
         <script src="/assets/js/index.js"></script>
     </body>
 
