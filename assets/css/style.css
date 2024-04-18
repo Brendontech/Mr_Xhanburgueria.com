@@ -42,7 +42,7 @@
 }
 
 .grid-main-heading {
-    margin-bottom: 1rem;
+    margin-bottom: 15vh;
     margin-top: 3.5rem;
 }
 
@@ -50,6 +50,7 @@
     margin-top: 4vh;
     margin-bottom: 4vh;
     background-color: var(--secondary-color);
+    font-size: 1.6rem;
 }
 
 .grid {
@@ -85,9 +86,10 @@
 
 .gallery-img {
     width: 100%;
-    max-width: 30rem;
     max-height: 56rem;
     overflow: hidden;
+    padding: 30px;
+    box-shadow: 0px 0px 5px 1px var(--primary-color);
 }
 
 .gallery-img img {
