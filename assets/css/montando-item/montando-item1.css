@@ -4,7 +4,10 @@
     /* margin: 0 auto; */
     /* Centraliza o container na página */
 }
-
+#total{
+    width: 20vh;
+    background-color: rgba(247, 214, 26, 0.781)
+}
 .item {
     cursor: pointer;
     padding: 8px;
@@ -35,17 +38,37 @@
     background-color: rgba(199, 199, 235, 0.705);
 }
 .opcao1 {
-    max-width: 400px;
     display: flex;
     justify-content: space-between;
 }
 .concluir-ped {
-    width: 400px;
     display: flex;
     height: 10vh;
     justify-content: center;
     align-items: center;
 }
+#cart{
+    height: 80vh;
+}
+.grid-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+.opcionais-grid{
+    width: 100%;
+}
+.opcao1 p{
+    font-size: 1.4rem;
+}
+::-webkit-scrollbar {
+    width: 2px; /* Largura da barra de rolagem */
+    height: 50px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #e70202; /* Cor de fundo do polegar */
+    border-radius: 100%; /* Raio da borda do polegar */
+  }
 @media (max-width: 800px){
     .menu-content {
         margin-top: 5vh;

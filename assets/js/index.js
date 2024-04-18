@@ -1,8 +1,8 @@
 let cartTotal = 0;
 let cartItems = [];
 
-window.onload = function() {
-    if(localStorage.getItem('cartItems')) {
+window.onload = function () {
+    if (localStorage.getItem('cartItems')) {
         cartItems = JSON.parse(localStorage.getItem('cartItems'));
         cartTotal = parseFloat(localStorage.getItem('cartTotal'));
         updateCartDisplay();
@@ -58,7 +58,10 @@ function updateCartDisplay() {
         newItem.textContent = item.item + ' (R$ ' + item.price.toFixed(2) + ') - Quantidade: ' + item.quantity;
 
         const deleteButton = document.createElement('button');
-        deleteButton.textContent = 'Excluir';
+        const img = document.createElement('img');
+        img.src = '/assets/img/imagem-excluir.png';
+        img.alt = 'Texcluir itens de carrinhos de compra';
+        deleteButton.appendChild(img);
         deleteButton.addEventListener('click', () => removeFromCart(index));
         newItem.appendChild(deleteButton);
 
@@ -106,5 +109,5 @@ function removeFromCartByItem(item) {
         saveCartToLocalStorage();
         console.log
     }
-    
+
 }

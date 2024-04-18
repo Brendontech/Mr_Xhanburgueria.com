@@ -321,18 +321,30 @@ img.carrinho {
     justify-content: center;
 }
 #cartItems {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     list-style: none;
     padding: 1px;
+    text-align: justify;
+    overflow-x: hidden;
+    height:85%;
 }
 #cartItems li {
-    height: 20vh;
+    height: 12vh;
+    display: flex;
+    align-items: center;
 }
 #cartItems button{
-    padding: 5px;
+    height: 24px;
+    width: 24px;
     border: none;
-    border-radius: 5px;
+    margin: 2px;
     cursor: pointer;
+    border-radius: 50%;
+}
+#cartItems img {
+    height: 24px;
+    width: 24px;
+    object-fit: cover;
 }
 .ocult-carrinho-index{
     display: none;
@@ -341,7 +353,17 @@ p.ingredientes{
     font-size: 1.2rem;
     text-align: initial;
 }
-
+#total {
+    justify-content: center;
+}
+::-webkit-scrollbar {
+    width: 2px; /* Largura da barra de rolagem */
+    height: 50px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #e70202; /* Cor de fundo do polegar */
+    border-radius: 100%; /* Raio da borda do polegar */
+  }
 @media (max-width: 800px) {
     h2{
         font-size: 4rem;
