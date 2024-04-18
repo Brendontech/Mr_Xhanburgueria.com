@@ -8,10 +8,14 @@
     width: 20vh;
     background-color: rgba(247, 214, 26, 0.781)
 }
+.aling-total{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .item {
     cursor: pointer;
     padding: 8px;
-
     background-color: var(--secondary-color);
     color: white;
     border: none;
@@ -54,6 +58,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
+    height: 100%;
 }
 .opcionais-grid{
     width: 100%;
