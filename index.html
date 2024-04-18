@@ -24,7 +24,6 @@
         <a href="/assets/html/carrinho.html">
             <img class="carrinho" src="assets/img/carrinho-de-compras (2).png" alt="">
         </a>
-        <p id="total"></p>
     </div>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
@@ -35,23 +34,23 @@
             </h1>
             <nav>
                 <ul onclick="getElementById('close-menu').checked = false;">
-                    <li><a href="#intro">PROMOÇÕES</a></li>
                     <li><a href="#grid-one">COMBOS</a></li>
                     <li><a href="#gallery">CARDÁPIO</a></li>
                     <li><a href="#pricing">BEBIDAS</a></li>
+                    <li><a href="#intro">LOCALIZAÇÃO</a></li>
                     <li><a href="#Contact">CONTATO</a></li>
                     <li><a href="/assets/html/login.html">LOGIN</a></li>
                 </ul>
             </nav>
             <a class="ocult-car" href="/assets/html/carrinho.html">
                 <img class="carrinho" src="/assets/img/carrinho-de-compras (2).png">
+                <p class="display-on-index" id="total"></p>
             </a>
-
         </div>
     </aside>
     <section id="grid-one" class="grid-one section">
         <div class=" main-content grid-one-content">
-            <h2 class="grid-main-heading">Combos</h2>
+            <h2 class="grid-main-heading">COMBOS PROMOCIONAIS</h2>
             <p class="grid-description"> Os melhores preços para a familia</p>
             <div class="grid text-center">
                 <div>
@@ -63,7 +62,7 @@
                     <p id="desconto"> de R$ <i><del> 59,90</p></del></i>
                     <p id="valor">Por R$<i> 49,90</i></p>
                     <div class="comprar-btn-alinhar">
-                        <a class="btn-comprar-hbg" onclick="addToCart('Item 1', 49.90)">Comprar</a>
+                        <a class="btn-comprar-hbg" onclick="addToCart('COMBO 1', 49.90)">Comprar</a>
                     </div>
                 </div>
                 <div>
@@ -75,7 +74,7 @@
                     <p id="desconto"> de R$ <i><del> 79,90</p></del></i>
                     <p id="valor">Por R$<i> 59,90</i></p>
                     <div class="comprar-btn-alinhar">
-                        <a class="btn-comprar-hbg" onclick="addToCart('Item 2', 59.90)">Comprar</a>
+                        <a class="btn-comprar-hbg" onclick="addToCart('COMBO 2', 59.90)">Comprar</a>
                     </div>
                 </div>
                 <div>
@@ -87,7 +86,19 @@
                     <p id="desconto"> de R$ <i><del> 120,00</p></del></i>
                     <p id="valor">Por R$<i> 119,90</i></p>
                     <div class="comprar-btn-alinhar">
-                        <a class="btn-comprar-hbg" onclick="addToCart('Item 3', 119.90)">Comprar</a>
+                        <a class="btn-comprar-hbg" onclick="addToCart('COMBO 3', 119.90)">Comprar</a>
+                    </div>
+                </div>
+                <div>
+                    <h3>1 REFRI LATA + <br> FRITAS (P)</h3>
+                    <img class="combo1" src="/assets/img/X-Big.jpeg" alt="">
+                    <p>
+                        SOMENTE ACOMPANHADO DE UM SANDUÍCHE
+                    </p>
+                    <p id="desconto"> de R$ <i><del> 14,00</p></del></i>
+                    <p id="valor">Por R$<i> 11,90</i></p>
+                    <div class="comprar-btn-alinhar">
+                        <a class="btn-comprar-hbg" onclick="addToCart('COMBO 4', 11.90)">Comprar</a>
                     </div>
                 </div>
             </div>
@@ -106,7 +117,8 @@
                         <p id="desconto"> de R$ <i><del> 19,00</p></del></i>
                         <p id="valor">Por R$<i> 17,90</i></p>
                         <div class="comprar-btn-alinhar">
-                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html" onclick="addToCart('Item 4', 34.90)">PERSONALIZAR</a>
+                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html"
+                                onclick="addToCart('X-SIMPLES', 17.90)">PERSONALIZAR</a>
                         </div>
                     </div>
                 </div>
@@ -120,59 +132,64 @@
                         <p id="desconto"> de R$ <i><del> 25,00</p></del></i>
                         <p id="valor">Por R$<i> 22,90</i></p>
                         <div class="comprar-btn-alinhar">
-                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html" onclick="addToCart('Item 5', 25.90)">PERSONALIZAR</a>
+                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html"
+                                onclick="addToCart('X-ESPECIAL', 22.90)">PERSONALIZAR</a>
                         </div>
                     </div>
                 </div>
                 <div class="bloco-img">
                     <div class="gallery-img">
                         <img src="/assets/img/hamburguer/combo-5.png">
-                        <p> Confira os melhores preços</p>
-                        <p class="ingredientes">PÃO, HAMBÚRGUER CASEIRO, OVO, SALSICHA, PRESUNTO, MUSSARELA, ABACAXI,
-                            ALFACE, TOMATE, MILHO E BATATA PALHA.</p>
-                        <p id="desconto"> de R$ <i><del> 28,00</p></del></i>
-                        <p id="valor">Por R$<i> 25,90</i></p>
-                        <div class="comprar-btn-alinhar">
-                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html" onclick="addToCart('Item 6', 25.90)">PERSONALIZAR</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-img">
-                    <div class="bloco-img">
-                        <img src="/assets/img/hamburguer/combo-5.png">
-                        <p> Confira os melhores preços</p>
-                        <p class="ingredientes">PÃO, HAMBÚRGUER CASEIRO, OVO, SALSICHA, PRESUNTO, MUSSARELA, ABACAXI,
-                            ALFACE, TOMATE, MILHO E BATATA PALHA.</p>
-                        <p id="desconto"> de R$ <i><del> 20,00</p></del></i>
-                        <p id="valor">Por R$<i> 17,00</i></p>
-                        <div class="comprar-btn-alinhar">
-                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html" onclick="addToCart('Item 7', 18.90)">PERSONALIZAR</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-img">
-                    <div class="bloco-img">
-                        <img src="/assets/img/hamburguer/combo-5.png">
-                        <p> Confira os melhores preços</p>
-                        <p class="ingredientes">PÃO, HAMBÚRGUER CASEIRO, OVO, SALSICHA, PRESUNTO, MUSSARELA, ABACAXI,
-                            ALFACE, TOMATE, MILHO E BATATA PALHA.</p>
+                        <p>X-BACON</p>
+                        <p class="ingredientes">PÃO, HAMBÚRGUER CASEIRO, BACON,PRESUNTO, MUSSARELA, ALFACE, TOMATE,
+                            MILHO, BATATA PALHA E CATUPIRY.</p>
                         <p id="desconto"> de R$ <i><del> 25,00</p></del></i>
                         <p id="valor">Por R$<i> 22,90</i></p>
                         <div class="comprar-btn-alinhar">
-                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html" onclick="addToCart('Item 8', 22.90)">PERSONALIZAR</a>
+                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html"
+                                onclick="addToCart('X-BACON', 22.90)">PERSONALIZAR</a>
                         </div>
                     </div>
                 </div>
                 <div class="gallery-img">
                     <div class="bloco-img">
                         <img src="/assets/img/hamburguer/combo-5.png">
-                        <p> Confira os melhores preços</p>
-                        <p class="ingredientes">PÃO, HAMBÚRGUER CASEIRO, OVO, SALSICHA, PRESUNTO, MUSSARELA, ABACAXI,
-                            ALFACE, TOMATE, MILHO E BATATA PALHA.</p>
-                        <p id="desconto"> de R$ <i><del> 30,00</p></del></i>
-                        <p id="valor">Por R$<i> 27,90</i></p>
+                        <p>X-CALABRESA</p>
+                        <p class="ingredientes">PÃO, HAMBURGUER CASEIRO, OVO, CALABRESA, PRESUNTO MUSSARELA, ALFACE,
+                            TOMATE, MILHO, BATATA PALHA E CATUPIRY.</p>
+                        <p id="desconto"> de R$ <i><del> 26,00</p></del></i>
+                        <p id="valor">Por R$<i> 23,90</i></p>
                         <div class="comprar-btn-alinhar">
-                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html" onclick="addToCart('Item 9', 27.90)">PERSONALIZAR</a>
+                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html"
+                                onclick="addToCart('X-CALABRESA', 23.90)">PERSONALIZAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img">
+                    <div class="bloco-img">
+                        <img src="/assets/img/hamburguer/combo-5.png">
+                        <p>X-TUDO</p>
+                        <p class="ingredientes">PÃO, HAMBURGUER CASEIRO, BACON, OVO, SALCICHA, PRESUNTO MUSSARELA,
+                            ABACAXI, ALFACE, TOMATE, MILHO, BATATA PALHA E CATUPIRY.</p>
+                        <p id="desconto"> de R$ <i><del> 29,00</p></del></i>
+                        <p id="valor">Por R$<i> 26,90</i></p>
+                        <div class="comprar-btn-alinhar">
+                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html"
+                                onclick="addToCart('X-TUDO', 26.90)">PERSONALIZAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img">
+                    <div class="bloco-img">
+                        <img src="/assets/img/hamburguer/combo-5.png">
+                        <p>X-BIG POINT DUPLO</p>
+                        <p class="ingredientes">PÃO, 2 HAMBURGUER CASEIRO, 2 OVOS, 2 PRESUNTO, 2 MUSSARELA ALFACE,
+                            TOMATE, MILHO E BATATA PALHA.</p>
+                        <p id="desconto"> de R$ <i><del> 34,00</p></del></i>
+                        <p id="valor">Por R$<i> 31,90</i></p>
+                        <div class="comprar-btn-alinhar">
+                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html"
+                                onclick="addToCart('X-BIG POINT DUPLO', 31.90)">PERSONALIZAR</a>
                         </div>
                     </div>
                 </div>
@@ -182,69 +199,74 @@
                 <div class="gallery-img">
                     <div class="bloco-img">
                         <img src="/assets/img/hamburguer/combo-5.png">
-                        <p> Confira os melhores preços</p>
-                        <p class="ingredientes">PÃO, HAMBÚRGUER CASEIRO, OVO, SALSICHA, PRESUNTO, MUSSARELA, ABACAXI,
-                            ALFACE, TOMATE, MILHO E BATATA PALHA.</p>
-                        <p id="desconto"> de R$ <i><del> 22,00</p></del></i>
-                        <p id="valor">Por R$<i> 19,90</i></p>
-                        <div class="comprar-btn-alinhar">
-                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html" onclick="addToCart('Item 10', 19.90)">PERSONALIZAR</a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="gallery-img">
-                    <div class="bloco-img">
-                        <img src="/assets/img/hamburguer/combo-5.png">
-                        <p> Confira os melhores preços</p>
-                        <p class="ingredientes">PÃO, HAMBÚRGUER CASEIRO, OVO, SALSICHA, PRESUNTO, MUSSARELA, ABACAXI,
-                            ALFACE, TOMATE, MILHO E BATATA PALHA.</p>
+                        <p> X-LOMBINHO</p>
+                        <p class="ingredientes">PÁO, LOMBO SUINO, PRESUNTO, MUSSARELA, ALFACE TOMATE MILHO E BATATA
+                            PALHA.</p>
                         <p id="desconto"> de R$ <i><del> 20,00</p></del></i>
                         <p id="valor">Por R$<i> 17,90</i></p>
                         <div class="comprar-btn-alinhar">
-                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html" onclick="addToCart('Item 11', 17.90)">PERSONALIZAR</a>
+                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html"
+                                onclick="addToCart('X-LOMBINHO', 17.90)">PERSONALIZAR</a>
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="gallery-img">
                     <div class="bloco-img">
                         <img src="/assets/img/hamburguer/combo-5.png">
-                        <p> Confira os melhores preços</p>
-                        <p class="ingredientes">PÃO, HAMBÚRGUER CASEIRO, OVO, SALSICHA, PRESUNTO, MUSSARELA, ABACAXI,
-                            ALFACE, TOMATE, MILHO E BATATA PALHA.</p>
-                        <p id="desconto"> de R$ <i><del> 32,00</p></del></i>
-                        <p id="valor">Por R$<i> 28,90</i></p>
+                        <p>X-LOMBÃO</p>
+                        <p class="ingredientes">PÃO, LOMBO SUINO, OVO, SALCICHA, PRESUNTO, MUSSARELA, ABACAXI, ALFACE,
+                            TOMATE, MILHO E BATATA PALHA .</p>
+                        <p id="desconto"> de R$ <i><del> 20,00</p></del></i>
+                        <p id="valor">Por R$<i> 17,90</i></p>
                         <div class="comprar-btn-alinhar">
-                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html" onclick="addToCart('Item 12', 28.90)">PERSONALIZAR</a>
+                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html"
+                                onclick="addToCart('X-LOMBÃO', 17.90)">PERSONALIZAR</a>
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="gallery-img">
                     <div class="bloco-img">
                         <img src="/assets/img/hamburguer/combo-5.png">
-                        <p> Confira os melhores preços</p>
-                        <p class="ingredientes">PÃO, HAMBÚRGUER CASEIRO, OVO, SALSICHA, PRESUNTO, MUSSARELA, ABACAXI,
-                            ALFACE, TOMATE, MILHO E BATATA PALHA.</p>
-                        <p id="desconto"> de R$ <i><del> 33,00</p></del></i>
-                        <p id="valor">Por R$<i> 29,90</i></p>
+                        <p>X-LOMBACON</p>
+                        <p class="ingredientes">PÃO, LOMBO SUINO, BACON, PRESUNTO, MUSSARELA ALFACE TOMATE, MILHO,
+                            BATATA PALHA E CATUPIRY.</p>
+                        <p id="desconto"> de R$ <i><del> 25,00</p></del></i>
+                        <p id="valor">Por R$<i> 22,90</i></p>
                         <div class="comprar-btn-alinhar">
-                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html" onclick="addToCart('Item 13', 29.90)">PERSONALIZAR</a>
+                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html"
+                                onclick="addToCart('X-LOMBACON', 22.90)">PERSONALIZAR</a>
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="gallery-img">
                     <div class="bloco-img">
                         <img src="/assets/img/hamburguer/combo-5.png">
-                        <p> Confira os melhores preços</p>
-                        <p class="ingredientes">PÃO, HAMBÚRGUER CASEIRO, OVO, SALSICHA, PRESUNTO, MUSSARELA, ABACAXI,
-                            ALFACE, TOMATE, MILHO E BATATA PALHA.</p>
-                        <p id="desconto"> de R$ <i><del> 29,00</p></del></i>
+                        <p>X-LOMBRESA</p>
+                        <p class="ingredientes">PÃO, LOMBO SUINO, OVO, CALABRESA, PRESUNTO, MUSSARELA, ALFACE, TOMATE,
+                            MILHO, BATATA PALHA E CATUPIRY.</p>
+                        <p id="desconto"> de R$ <i><del> 26,00</p></del></i>
+                        <p id="valor">Por R$<i> 23,90</i></p>
+                        <div class="comprar-btn-alinhar">
+                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html"
+                                onclick="addToCart('X-LOMBRESA', 23.90)">PERSONALIZAR</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-img">
+                    <div class="bloco-img">
+                        <img src="/assets/img/hamburguer/combo-5.png">
+                        <p>X-LOMBO EGG BACON</p>
+                        <p class="ingredientes">PÃO, LOMBO SUINO, BACON, OVO, SALCICHA, PRESUNTO MUSSARELA, ABACAXI,
+                            ALFACE, TOMATE, MILHO, BATATA PALHA E CATUPIRY.</p>
+                        <p id="desconto"> de R$ <i><del> 30,00</p></del></i>
                         <p id="valor">Por R$<i> 26,90</i></p>
                         <div class="comprar-btn-alinhar">
-                            <a href="/assets/html/montando-item2/montando-item1.html" class="btn-comprar-hbg" onclick="addToCart('Item 14', 20.90)">PERSONALIZAR</a>
+                            <a href="/assets/html/montando-item2/montando-item1.html" class="btn-comprar-hbg"
+                                onclick="addToCart('X-LOMBO EGG BACON', 26.90)">PERSONALIZAR</a>
                         </div>
                     </div>
                 </div>
@@ -254,20 +276,76 @@
                 <div class="gallery-img">
                     <div class="bloco-img">
                         <img src="/assets/img/hamburguer/combo-5.png">
-                        <p> Confira os melhores preços</p>
-                        <p class="ingredientes">PÃO, HAMBÚRGUER CASEIRO, OVO, SALSICHA, PRESUNTO, MUSSARELA, ABACAXI,
-                            ALFACE, TOMATE, MILHO E BATATA PALHA.</p>
-                        <p id="desconto"> de R$ <i><del> 18,70</p></del></i>
-                        <p id="valor">Por R$<i> 20,90</i></p>
+                        <p>X-FRANGUINHO</p>
+                        <p class="ingredientes">PÃO, FILE DE FRANGO, PRESUNTO, MUSSARELA, ALFACE, TOMATE MILHO E BATATA
+                            PALHA.</p>
+                        <p id="desconto"> de R$ <i><del> 20,00</p></del></i>
+                        <p id="valor">Por R$<i> 17,90</i></p>
                         <div class="comprar-btn-alinhar">
-                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html" onclick="addToCart('Item 15', 20.90)">PERSONALIZAR</a>
+                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html"
+                                onclick="addToCart('X-FRANGUINHO', 17.90)">PERSONALIZAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img">
+                    <div class="bloco-img">
+                        <img src="/assets/img/hamburguer/combo-5.png">
+                        <p>X-FRANGÃO</p>
+                        <p class="ingredientes">PÃO, FILE DE FRANGO, OVO, SALCICHA, PRESUNTO, MUSSARELA, ABACAXI ALFACE,
+                            TOMATE, MILHO E BATATA PALHA.</p>
+                        <p id="desconto"> de R$ <i><del> 25,00</p></del></i>
+                        <p id="valor">Por R$<i> 22,90</i></p>
+                        <div class="comprar-btn-alinhar">
+                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html"
+                                onclick="addToCart('X-FRANGÃO', 22.90)">PERSONALIZAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img">
+                    <div class="bloco-img">
+                        <img src="/assets/img/hamburguer/combo-5.png">
+                        <p>X-FRANBACON</p>
+                        <p class="ingredientes">PÃO, FILE DE FRANGO, BACON, PRESUNTO, MUSSARELA, ALFACE, TOMATE, MILHO,
+                            BATATA PALHA E CATUPIRY.</p>
+                        <p id="desconto"> de R$ <i><del> 25,00</p></del></i>
+                        <p id="valor">Por R$<i> 22,90</i></p>
+                        <div class="comprar-btn-alinhar">
+                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html"
+                                onclick="addToCart('X-FRANBACON', 22.90)">PERSONALIZAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img">
+                    <div class="bloco-img">
+                        <img src="/assets/img/hamburguer/combo-5.png">
+                        <p>X-FRANBESA</p>
+                        <p class="ingredientes">PÃO, FILE DE FRANGO, OVO, CALABRESA, PRESUNTO, MUSSARELA ALFACE, TOMATE,
+                            MILHO, BATATA PALHA E CATUPIRY.</p>
+                        <p id="desconto"> de R$ <i><del> 27,00</p></del></i>
+                        <p id="valor">Por R$<i> 23,90</i></p>
+                        <div class="comprar-btn-alinhar">
+                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html"
+                                onclick="addToCart('X-FRANBESA', 23.90)">PERSONALIZAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img">
+                    <div class="bloco-img">
+                        <img src="/assets/img/hamburguer/combo-5.png">
+                        <p>X-FRANGO EGG BACON</p>
+                        <p class="ingredientes">PÃO, FILE DE FRANGO, BACON, OVO, SALCICHA, PRESUNTO MUSSARELA, ABACAXI,
+                            ALFACE, TOMATE, MILHO, BATATA PALHA E CATUPIRY.</p>
+                        <p id="desconto"> de R$ <i><del> 29,00</p></del></i>
+                        <p id="valor">Por R$<i> 26,90</i></p>
+                        <div class="comprar-btn-alinhar">
+                            <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html"
+                                onclick="addToCart('X-FRANGO EGG BACON', 26.90)">PERSONALIZAR</a>
                         </div>
                     </div>
                 </div>
             </div>
 
 
-        </div>
         </div>
     </section>
 
@@ -300,28 +378,35 @@
                 <div class="dropdown creme-opition">
                     <button class="dropbtn">Cremes</button>
                     <div class="dropdown-content">
-                        <a onclick="addToCart('Creme de Morango', 8.90)">Creme de Morango (R$ 8,90)</a>
-                        <a onclick="addToCart('Creme de Maracujá', 8.90)">Creme de Maracujá (R$ 8,90)</a>
-                        <a onclick="addToCart('Creme de Cupuaçu', 8.90)">Creme de Cupuaçu (R$ 8,90)</a>
-                        <a onclick="addToCart('Creme de Limão', 8.90)">Creme de Limão (R$ 8,90)</a>
+                        <a onclick="addToCart('Creme de Maracujá', 9.90)">Creme de Maracujá (R$ 9,90)</a>
+                        <a onclick="addToCart('Creme de Morango', 9.90)">Creme de Morango (R$ 9,90)</a>
+                        <a onclick="addToCart('Creme de Cupuaçu', 9.90)">Creme de Cupuaçu (R$ 9,90)</a>
+                        <a onclick="addToCart('Creme de Graviola', 9.90)">Creme de Graviola (R$ 9,90)</a>
+                        <a onclick="addToCart('Creme de Uva', 9.90)">Creme de Uva (R$ 9,90)</a>
                     </div>
                 </div>
                 <div class="dropdown creme-opition">
                     <button class="dropbtn">Sucos</button>
                     <div class="dropdown-content">
-                        <a onclick="addToCart('Creme de Morango', 8.90)">Creme de Morango (R$ 8,90)</a>
-                        <a onclick="addToCart('Creme de Maracujá', 8.90)">Creme de Maracujá (R$ 8,90)</a>
-                        <a onclick="addToCart('Creme de Cupuaçu', 8.90)">Creme de Cupuaçu (R$ 8,90)</a>
-                        <a onclick="addToCart('Creme de Limão', 8.90)">Creme de Limão (R$ 8,90)</a>
+                        <a onclick="addToCart('Suco de Maracujá', 6.90)">Suco de Maracujá (R$ 6,90)</a>
+                        <a onclick="addToCart('Suco de Morango', 6.90)">Suco de Morango (R$ 6,90)</a>
+                        <a onclick="addToCart('Suco de Acerola', 6.90)">Suco de Acerola (R$ 6,90)</a>
+                        <a onclick="addToCart('Suco de Abacaxi', 6.90)">Suco de Abacaxi (R$ 6,90)</a>
+                        <a onclick="addToCart('Suco de Goiaba', 6.90)">Suco de Goiaba (R$ 6,90)</a>
+                        <a onclick="addToCart('Suco de Uva', 6.90)">Suco de Uva (R$ 6,90)</a>
                     </div>
                 </div>
                 <div class="dropdown creme-opition">
-                    <button class="dropbtn">Refrigerante</button>
+                    <button class="dropbtn">BEBIDAS</button>
                     <div class="dropdown-content">
-                        <a onclick="addToCart('Creme de Morango', 8.90)">Creme de Morango (R$ 8,90)</a>
-                        <a onclick="addToCart('Creme de Maracujá', 8.90)">Creme de Maracujá (R$ 8,90)</a>
-                        <a onclick="addToCart('Creme de Cupuaçu', 8.90)">Creme de Cupuaçu (R$ 8,90)</a>
-                        <a onclick="addToCart('Creme de Limão', 8.90)">Creme de Limão (R$ 8,90)</a>
+                        <a onclick="addToCart('ÁGUA MINERAL', 3.00)">ÁGUA MINERAL (R$ 3,00)</a>
+                        <a onclick="addToCart('ÁGUA MINERAL COM GÁS', 4.00)">ÁGUA MINERAL COM GÁS (R$ 4,00)</a>
+                        <a onclick="addToCart('REFRIGERANTE KS', 4.90)">REFRIGERANTE KS (R$ 4,90)</a>
+                        <a onclick="addToCart('REFRIGERANTE LATA', 5.90)">REFRIGERANTE LATA (R$ 5,90)</a>
+                        <a onclick="addToCart('REFRIGERANTE 600', 5.90)">REFRIGERANTE 600 (R$ 7,90)</a>
+                        <a onclick="addToCart('REFRIGERANTE 1L', 5.90)">REFRIGERANTE 1L (R$ 9,90)</a>
+                        <a onclick="addToCart('REFRIGERANTE 2L', 12.90)">REFRIGERANTE 2L (R$ 12,90)</a>
+                        <a onclick="addToCart('SPRITE FRESH', 6.90)">SPRITE FRESH (R$ 6,90)</a>
                     </div>
                 </div>
             </div>
