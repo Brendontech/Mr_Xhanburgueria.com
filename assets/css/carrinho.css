@@ -69,13 +69,13 @@ span.icon24 {
     font-size: 1.6rem;
     list-style: none;
     padding: 1px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
 }
-
+#cart {
+    width: 50%;
+}
 #cartItems li {
-    height: 20vh;
+    height: 8vh;
+    width: 100%;
 }
 
 #cartItems button {

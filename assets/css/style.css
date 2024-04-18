@@ -91,6 +91,7 @@
 }
 
 .gallery-img img {
+    width: 50%;
     transition: all 300ms ease-in-out;
 }
 
@@ -221,7 +222,7 @@ img.carrinho {
 .comprar-btn-alinhar {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .btn-comprar-hbg {
@@ -323,9 +324,6 @@ img.carrinho {
     font-size: 1.6rem;
     list-style: none;
     padding: 1px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
 }
 #cartItems li {
     height: 20vh;
