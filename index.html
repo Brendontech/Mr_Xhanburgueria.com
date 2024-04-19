@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/assets/css/menu.css">
     <link rel="stylesheet" href="/assets/css/elements.css">
     <link rel="stylesheet" href="/assets/css/variaveis.css">
+    <link rel="stylesheet" href="/assets/css/montando-item/montando-item1.css">
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
@@ -49,11 +50,107 @@
             </a>
         </div>
     </aside>
+
+    <!-- parte destinada aos opcionais  -->
+
     <section id="grid-one" class="grid-one section">
         <div class=" main-content grid-one-content">
             <h2 class="grid-main-heading">COMBOS PROMOCIONAIS</h2>
             <div class="grid text-center">
-                <div>
+                
+                <div id="grid-two">
+                    <div id="cart" class="cart2">
+                        <ul id="cartItems">
+                        </ul>
+                    </div>
+                    
+                    <div class="opcionais-grid">
+                        <div class="opcao1" onclick="toggleSelection('HAMBÚRGUER CASEIRO', 'HAMBÚRGUER CASEIRO', 6.00)">
+                            <div class="color-fnd">
+                                <div id="HAMBÚRGUER CASEIRO" class="item"></div>
+                            </div>
+                            <p>HAMBÚRGUER CASEIRO</p>
+                            <p>R$ 6,00</p>
+                        </div>
+                        <div class="opcao1" onclick="toggleSelection('LOMBO SUÍNO', 'LOMBO SUÍNO', 6.00)">
+                            <div class="color-fnd">
+                                <div id="LOMBO SUÍNO" class="item"></div>
+                            </div>
+                            <p>LOMBO SUÍNO</p>
+                            <p>R$ 6,00</p>
+                        </div>
+                        <div class="opcao1" onclick="toggleSelection('FILÉ DE FRANGO', 'FILÉ DE FRANGO', 6.00)">
+                            <div class="color-fnd">
+                                <div id="FILÉ DE FRANGO" class="item"></div>
+                            </div>
+                            <p>FILÉ DE FRANGO</p>
+                            <p>R$ 6,00</p>
+                        </div>
+                        <div class="opcao1" onclick="toggleSelection('OVO', 'OVO', 3.00)">
+                            <div class="color-fnd">
+                                <div id="OVO" class="item"></div>
+                            </div>
+                            <p>OVO</p>
+                            <p>R$ 3,00</p>
+                        </div>
+                        <div class="opcao1" onclick="toggleSelection('SALSICHA PERDIGÃO', 'SALSICHA PERDIGÃO', 3.00)">
+                            <div class="color-fnd">
+                                <div id="SALSICHA PERDIGÃO" class="item"></div>
+                            </div>
+                            <p>SALSICHA PERDIGÃO</p>
+                            <p>R$ 3,00</p>
+                        </div>
+                        <div class="opcao1" onclick="toggleSelection('BACON', 'BACON', 5.00)">
+                            <div class="color-fnd">
+                                <div id="BACON" class="item"></div>
+                            </div>
+                            <p>BACON</p>
+                            <p>R$ 5,00</p>
+                        </div>
+                        <div class="opcao1" onclick="toggleSelection('MUSSARELA', 'MUSSARELA', 3.00)">
+                            <div class="color-fnd">
+                                <div id="MUSSARELA" class="item"></div>
+                            </div>
+                            <p>MUSSARELA</p>
+                            <p>R$ 3,00</p>
+                        </div>
+                        <div class="opcao1" onclick="toggleSelection('PRESUNTO', 'PRESUNTO', 2.00)">
+                            <div class="color-fnd">
+                                <div id="PRESUNTO" class="item"></div>
+                            </div>
+                            <p>PRESUNTO</p>
+                            <p>R$ 2,00</p>
+                        </div>
+                        <div class="opcao1" onclick="toggleSelection('CATUPIRY', 'CATUPIRY', 3.00)">
+                            <div class="color-fnd">
+                                <div id="CATUPIRY" class="item"></div>
+                            </div>
+                            <p>CATUPIRY</p>
+                            <p>R$ 3,00</p>
+                        </div>
+                        <div class="opcao1" onclick="toggleSelection('ABACAXI', 'ABACAXI', 2.00)">
+                            <div class="color-fnd">
+                                <div id="ABACAXI" class="item"></div>
+                            </div>
+                            <p>ABACAXI</p>
+                            <p>R$ 2,00</p>
+                        </div>
+                        <div class="opcao1" onclick="toggleSelection('CALABRESA', 'CALABRESA', 3.00)">
+                            <div class="color-fnd">
+                                <div id="CALABRESA" class="item"></div>
+                            </div>
+                            <p>CALABRESA</p>
+                            <p>R$ 3,00</p>
+                        </div>
+                    </div>
+                    <div class="concluir-ped">
+                        <div class="btn-concluir">
+                            <a class="btn-comprar-hbg" href="/assets/html/carrinho.html">FINALIZAR</a>
+                            <a class="btn-comprar-hbg" href="#" onclick="mostrarOptions()">VOLTAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="options">
                     <h3>1 X-Especial + <br> 1 X-Tudo <br> + Refri 1 Lt</h3>
                     <img class="combo1" src="/assets/img/X-Big.jpeg" alt="">
                     <p>
@@ -63,7 +160,7 @@
                     <p id="valor">Por R$<i> 49,90</i></p>
                     <div class="comprar-btn-alinhar">
                         <a class="btn-comprar-hbg" onclick="addToCart('COMBO 1', 49.90)">COMPRAR</a>
-                        <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html">OPCIONAIS</a>
+                        <a class="btn-comprar-hbg" onclick="mostrarGridTwo()">OPCIONAIS</a>
                     </div>
 
                 </div>
@@ -73,13 +170,16 @@
                     <p>
                         experimente o combo familia numero 2
                     </p>
-                    <p id="desconto"> de R$ <i><del> 79,90</p></del></i>
-                    <p id="valor">Por R$<i> 59,90</i></p>
-                    <div class="comprar-btn-alinhar">
-                        <a class="btn-comprar-hbg" onclick="addToCart('COMBO 2', 59.90)">COMPRAR</a>
-                        <a class="btn-comprar-hbg" href="/assets/html/montando-item2/montando-item1.html">OPCIONAIS</a>
+                    <div class="options">
+                        <p id="desconto"> de R$ <i><del> 79,90</p></del></i>
+                        <p id="valor">Por R$<i> 59,90</i></p>
+                        <div class="comprar-btn-alinhar">
+                            <a class="btn-comprar-hbg" onclick="addToCart('COMBO 2', 59.90)">COMPRAR</a>
+                            <a class="btn-comprar-hbg" onclick="mostrarGridTwo()">OPCIONAIS</a>
+                        </div>
                     </div>
                 </div>
+
                 <div>
                     <h3>1 X-Bacon + <br> 1 X-Tudo <br> + Refri 1 Lt</h3>
                     <img class="combo1" src="/assets/img/X-Big.jpeg" alt="">

@@ -1,3 +1,12 @@
+#grid-two {
+    display: none;
+}
+.options {
+    display: block; /* ou qualquer outro valor desejado para options */
+}
+.hide {
+    display: none;
+}
 .container {
     width: 300px;
     /* Largura maior */
@@ -51,10 +60,10 @@
     justify-content: center;
     align-items: center;
 }
-#cart{
-    height: 80vh;
+.cart2{
+    height: 70vh;
 }
-.grid-two {
+#grid-two {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;

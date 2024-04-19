@@ -107,7 +107,13 @@ function removeFromCartByItem(item) {
         updateCartDisplay();
         updateTotalDisplay();
         saveCartToLocalStorage();
-        console.log
     }
-
+}
+function mostrarGridTwo() {
+    document.getElementById("grid-two").style.display = "grid";
+    document.querySelector(".options").classList.add('hide');
+}
+function mostrarOptions() {
+    document.querySelector(".options").classList.remove('hide');
+    document.getElementById("grid-two").style.display = "none";
 }
